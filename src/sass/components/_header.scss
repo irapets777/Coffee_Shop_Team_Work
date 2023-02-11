@@ -1,4 +1,49 @@
-.header{
-    background-color: red;
-    color: #fff;
+.header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 34px;
+    background-color: $var1;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        max-width: 1440px;
+
+        .header__home {
+            display: flex;
+            flex: 0 0 55%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header__nav {
+            flex: 0 0 45%;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                height: 74px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    max-width: 86px;
+                    width: 100%;
+                    &:hover {
+                        background: linear-gradient(93.99deg, rgba(223, 195, 157, 0.4) -9.94%, rgba(248, 228, 190, 0.4) 19.83%, rgba(223, 195, 157, 0.4) 50.71%, rgba(248, 228, 190, 0.4) 81.26%, rgba(248, 228, 190, 0.4) 111.66%);
+                        transition: 0.4s;
+                        filter: blur(2);
+                        border-radius: 0px 0px 30px 30px;
+                    }
+
+                    a {
+                        font-family: "leiko";
+                        color: $var1;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
