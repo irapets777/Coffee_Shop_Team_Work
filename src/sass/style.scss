@@ -1,5 +1,6 @@
 @import "reset_style.scss";
 @import "base/func";
+@import "base/variables";
 @import "fonts/font";
 
 
@@ -8,5 +9,7 @@
 @import "libs/slick.scss";
 
 @import "components/header";
+@import "components/hero";
 @import "components/footer";
+
 
