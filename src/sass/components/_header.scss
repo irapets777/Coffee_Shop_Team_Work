@@ -50,7 +50,14 @@
                     max-width: 86px;
                     width: 100%;
                     &:hover {
-                        background: linear-gradient(93.99deg, rgba(223, 195, 157, 0.4) -9.94%, rgba(248, 228, 190, 0.4) 19.83%, rgba(223, 195, 157, 0.4) 50.71%, rgba(248, 228, 190, 0.4) 81.26%, rgba(248, 228, 190, 0.4) 111.66%);
+                        background: linear-gradient(
+                            93.99deg,
+                            rgba(223, 195, 157, 0.4) -9.94%,
+                            rgba(248, 228, 190, 0.4) 19.83%,
+                            rgba(223, 195, 157, 0.4) 50.71%,
+                            rgba(248, 228, 190, 0.4) 81.26%,
+                            rgba(248, 228, 190, 0.4) 111.66%
+                        );
                         transition: 0.4s;
                         filter: blur(2);
                         border-radius: 0px 0px 30px 30px;

@@ -1,10 +1,11 @@
 .hero {
-   width: 100%;
+   max-width: 1440px;
    margin: 0 auto;
-   // padding: 0 34px;
+   background-image: url("../img/hero-img/coffee-hero-items-beans.png");
+   overflow: hidden;
+
    &__container {
       display: flex;
-      min-width: 1440px;
       .container__blur-first {
          width: 450px;
          height: 450px;
@@ -26,28 +27,115 @@
          z-index: 10;
       }
       .hero__main {
-         flex: 0 0 55%;
          z-index: 20;
          padding-top: 138px;
          padding-left: 104px;
+         flex: 0 0 auto;
+         width: 55%;
          h1 {
             font-family: "Dancing script";
             font-weight: 700;
             font-size: 112px;
             line-height: 100%;
             color: #f8e4be;
+            margin-bottom: 86px;
             -webkit-text-fill-color: #221518;
-            -webkit-text-stroke-width: 4px;
+            -webkit-text-stroke-width: 2.5px;
             text-shadow: 185px 140px 65px rgba(0, 0, 0, 0.01), 118px 90px 59px rgba(0, 0, 0, 0.12),
                67px 51px 50px rgba(0, 0, 0, 0.39), 30px 22px 37px rgba(0, 0, 0, 0.67), 7px 6px 20px rgba(0, 0, 0, 0.77),
                0px 0px 0px rgba(0, 0, 0, 0.78);
          }
+         .hero__describe {
+            max-width: 472px;
+            margin-bottom: 86px;
+            p {
+               font-family: "Leiko";
+               font-style: normal;
+               font-weight: 400;
+               font-size: 24px;
+               line-height: 195%;
+               color: #dabb9e;
+            }
+         }
+
+         .hero__btn {
+            margin-bottom: 155px;
+            :first-child {
+               margin-right: 50px;
+            }
+            a {
+               font-family: $var6;
+               font-weight: 400;
+               font-size: 24px;
+               line-height: 100%;
+               color: $var4;
+               padding: 12px 36px;
+               border-radius: 49px;
+               background: rgba(247, 225, 188, 0.1);
+               border-right: 2px solid rgba(224, 168, 114, 1);
+               border-bottom: 2px solid rgba(248, 228, 190, 1);
+               border-left: 2px solid rgba(255, 243, 224, 1);
+               border-top: 2px solid rgba(224, 168, 114, 1);
+               transition: 0.3s;
+               &:hover {
+                  background: rgba(247, 225, 188, 0.3);
+               }
+            }
+         }
+         .hero__coffee-container {
+            width: 366px;
+            height: 248px;
+            background: rgba(74, 39, 33, 0.85);
+            backdrop-filter: blur(16.9695px);
+            margin-left: 32px;
+            border-radius: 50px 50px 0 0;
+            border-left: 3.77px solid rgba(84, 54, 42, 1);
+            border-top: 3.77px solid rgba(84, 54, 42, 1);
+            background-image: url("../img/hero-img/hero-cup.png");
+            background-repeat: no-repeat;
+            h3 {
+               font-family: $var7;
+               background: linear-gradient(250.73deg, #e0a872 13.76%, #f8e4be 49.91%, #fff3e0 58.47%, #e0a872 95.09%);
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+               font-weight: 500;
+               font-size: 28px;
+               line-height: 100%;
+               text-align: right;
+               margin-top: 108px;
+               margin-right: 22px;
+               margin-bottom: 45px;
+            }
+            a {
+               font-family: $var6;
+               float: right;
+               display: flex;
+               align-items: center;
+               color: $var4;
+               font-size: 12px;
+               padding: 8px 9px;
+               margin-right: 22px;
+               border-radius: 49px;
+               background: rgba(247, 225, 188, 0.1);
+               border-right: 1px solid rgba(224, 168, 114, 1);
+               border-bottom: 1px solid rgba(248, 228, 190, 1);
+               border-left: 1px solid rgba(255, 243, 224, 1);
+               border-top: 1px solid rgba(224, 168, 114, 1);
+               transition: 0.3s;
+               &:hover {
+                  background: rgba(247, 225, 188, 0.3);
+               }
+               img {
+                  margin-left: 8px;
+               }
+            }
+         }
       }
       .hero__item {
-         flex: 0 0 45%;
-         background: radial-gradient(114.24% 73.21% at 98.55% 92.63%, #3a1b1a 0%, rgba(124, 87, 60, 0) 100%)
-               /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-            #7c573c;
+         flex: 0 0 auto;
+         width: 45%;
+         z-index: -10;
+         background: radial-gradient(114.24% 73.21% at 98.55% 92.63%, #3a1b1a 0%, rgba(124, 87, 60, 0) 100%), #7c573c;
          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
    }
