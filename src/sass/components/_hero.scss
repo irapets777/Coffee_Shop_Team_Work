@@ -1,18 +1,11 @@
 .hero {
    max-width: 1440px;
-   width: 100%;
    margin: 0 auto;
-   // background-image: url("../img/hero-img/coffee-hero-item.webp");
-   // position: absolute;
-   // z-index: 80;
+   background-image: url("../img/hero-img/coffee-hero-items-beans.png");
    overflow: hidden;
 
-   // padding: 0 34px;
    &__container {
       display: flex;
-      // overflow: hidden;
-      // background-image: url("../img/hero-img/coffee-hero-item.webp");
-      // min-width: 1440px;
       .container__blur-first {
          width: 450px;
          height: 450px;
@@ -34,10 +27,11 @@
          z-index: 10;
       }
       .hero__main {
-         flex: 0 0 55%;
          z-index: 20;
          padding-top: 138px;
          padding-left: 104px;
+         flex: 0 0 auto;
+         width: 55%;
          h1 {
             font-family: "Dancing script";
             font-weight: 700;
@@ -138,7 +132,9 @@
          }
       }
       .hero__item {
-         flex: 0 0 45%;
+         flex: 0 0 auto;
+         width: 45%;
+         z-index: -10;
          background: radial-gradient(114.24% 73.21% at 98.55% 92.63%, #3a1b1a 0%, rgba(124, 87, 60, 0) 100%), #7c573c;
          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
