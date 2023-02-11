@@ -1,8 +1,10 @@
 .hero {
-   max-width: 1440px;
+   width: 100%;
    margin: 0 auto;
    background-image: url("../img/hero-img/coffee-hero-items-beans.png");
-   overflow: hidden;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 0px;
 
    &__container {
       display: flex;
@@ -28,7 +30,7 @@
       }
       .hero__main {
          z-index: 20;
-         padding-top: 138px;
+         padding-top: 256px;
          padding-left: 104px;
          flex: 0 0 auto;
          width: 55%;
