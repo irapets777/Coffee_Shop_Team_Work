@@ -15,8 +15,9 @@
             border-radius: 35px;
             border-top: 3px solid rgba(84, 54, 42, 1);
             border-left: 3px solid rgba(84, 54, 42, 1);
-            width: 1200px;
-            height: 410px;
+            width: 100%;
+            height: 100%;
+            padding: 6px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,15 +41,14 @@
                 h2 {
                     font-family: $var7;
                     text-align: right;
-                    font-style: normal;
                     font-weight: 700;
                     font-size: 54px;
-                    line-height: 210%;
+                    line-height: 0px;
                     color: $var4;
                     text-shadow: 0px 69px 19px rgba(32, 19, 22, 0.01), 0px 44px 18px rgba(32, 19, 22, 0.09),
                         0px 25px 15px rgba(32, 19, 22, 0.31), 0px 11px 11px rgba(32, 19, 22, 0.52),
                         0px 3px 6px rgba(32, 19, 22, 0.6), 0px 0px 0px rgba(32, 19, 22, 0.62);
-                    // transform: translate(280%, -44%);
+                   transform: translateY(-60px);
                 }
 
                 .story__image {
