@@ -1,8 +1,45 @@
-.our__srory {
-    max-width: 1200px;
+.story {
+    max-width: 1440px;
+    height: 584px;
     width: 100%;
-    margin-top: 53px;
-    background-color: rgba(173, 113, 74, 0.35);
-    backdrop-filter: blur(2px);
-    border-radius: 35px;
+    &__container {
+        padding: 0 15px;
+        max-width: 1175px;
+        max-height: 378px;
+        display: flex;
+        .story__blur-first {
+            position: absolute;
+            width: 413.54px;
+            height: 413.54px;
+            left: 1003.46px;
+            top: -188.51px;
+
+            background: #7d5647;
+            opacity: 0.8;
+            filter: blur(133px);
+        }
+        .story__blur-second {
+            position: absolute;
+            width: 413.54px;
+            height: 413.54px;
+            left: 796px;
+            top: -230px;
+
+            background: #775142;
+            opacity: 0.8;
+            filter: blur(133px);
+        }
+        .story__title {
+            background: rgba(173, 113, 74, 0.35);
+            backdrop-filter: blur(2px);
+            border-radius: 35px;
+            .story__describe {
+                font-family: $var6;
+                font-size: 18px;
+                line-height: 218.5%;
+                text-transform: capitalize;
+                color: #ffffff;
+            }
+        }
+    }
 }
