@@ -1,44 +1,95 @@
 .story {
-    max-width: 1440px;
-    height: 584px;
-    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    #more-story {
+        display: none;
+    }
     &__container {
         padding: 0 15px;
-        max-width: 1175px;
-        max-height: 378px;
+        margin: 120px 0 140px;
         display: flex;
-        .story__blur-first {
-            position: absolute;
-            width: 413.54px;
-            height: 413.54px;
-            left: 1003.46px;
-            top: -188.51px;
+        position: relative;
 
-            background: #7d5647;
-            opacity: 0.8;
-            filter: blur(133px);
-        }
-        .story__blur-second {
-            position: absolute;
-            width: 413.54px;
-            height: 413.54px;
-            left: 796px;
-            top: -230px;
-
-            background: #775142;
-            opacity: 0.8;
-            filter: blur(133px);
-        }
-        .story__title {
-            background: rgba(173, 113, 74, 0.35);
-            backdrop-filter: blur(2px);
+        .story__border {
             border-radius: 35px;
-            .story__describe {
-                font-family: $var6;
-                font-size: 18px;
-                line-height: 218.5%;
-                text-transform: capitalize;
-                color: #ffffff;
+            border-top: 3px solid rgba(84, 54, 42, 1);
+            border-left: 3px solid rgba(84, 54, 42, 1);
+            width: 1200px;
+            height: 410px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .story__title {
+                display: flex;
+                justify-content: end;
+                padding-right: 56px;
+                padding-top: 64px;
+                padding-bottom: 36px;
+                width: 1190px;
+                position: relative;
+                background: rgba(173, 113, 74, 0.35);
+                backdrop-filter: blur(2px);
+                border-radius: 35px;
+                background-image: url("../img/story-img/story-gradient1.png"),
+                    url("../img/story-img/story-gradient2.png");
+                background-position-x: right;
+                background-repeat: no-repeat;
+
+                .story__image {
+                    img {
+                        transform: translate(-106%, -17%);
+                        position: absolute;
+                        filter: drop-shadow(0px 153px 61px rgba(32, 19, 22, 0.03))
+                            drop-shadow(0px 86px 52px rgba(32, 19, 22, 0.1))
+                            drop-shadow(0px 38px 38px rgba(32, 19, 22, 0.17))
+                            drop-shadow(0px 10px 21px rgba(32, 19, 22, 0.2))
+                            drop-shadow(0px 0px 0px rgba(32, 19, 22, 0.2));
+                    }
+                    .story-bean1 {
+                        position: absolute;
+                        transform: translate(-840%, 110%);
+                        // left: 15px;
+                        // top: 40%;
+                        // display: block;
+                    }
+                    .story-bean2 {
+                        position: absolute;
+                        transform: translate(-215%, 45%);
+                        // top: 26%;
+                        // left: 33%;
+                        // display: block;
+                    }
+                    .story-bean3 {
+                        position: absolute;
+                        transform: translate(-276%, 325%);
+                        // left: 31%;
+                        // top: 78%;
+                        // display: block;
+                    }
+                }
+                .story__describe {
+                    font-family: $var6;
+                    font-size: 18px;
+                    line-height: 39px;
+                    text-transform: capitalize;
+                    color: #ffffff;
+                    width: 592px;
+                    transition: max-height 0.2s ease-out;
+                }
+                .more__story {
+                    background: none;
+                    border: none;
+                    font-family: $var6;
+                    font-size: 20px;
+                    line-height: 135%;
+                    text-align: right;
+                    text-decoration: underline;
+                    color: #ffffff;
+                    float: right;
+                    padding-top: 32px;
+                }
             }
         }
     }
