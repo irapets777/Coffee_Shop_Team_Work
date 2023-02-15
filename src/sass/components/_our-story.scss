@@ -9,7 +9,6 @@
         padding: 0 15px;
         margin: 120px 0 140px;
         display: flex;
-        position: relative;
 
         .story__border {
             border-radius: 35px;
@@ -29,7 +28,6 @@
                 padding-top: 64px;
                 padding-bottom: 36px;
                 width: 1190px;
-                position: relative;
                 background: rgba(173, 113, 74, 0.35);
                 backdrop-filter: blur(2px);
                 border-radius: 35px;
@@ -48,7 +46,7 @@
                     text-shadow: 0px 69px 19px rgba(32, 19, 22, 0.01), 0px 44px 18px rgba(32, 19, 22, 0.09),
                         0px 25px 15px rgba(32, 19, 22, 0.31), 0px 11px 11px rgba(32, 19, 22, 0.52),
                         0px 3px 6px rgba(32, 19, 22, 0.6), 0px 0px 0px rgba(32, 19, 22, 0.62);
-                   transform: translateY(-60px);
+                    transform: translateY(-60px);
                 }
 
                 .story__image {
