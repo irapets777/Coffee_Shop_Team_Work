@@ -1,0 +1,92 @@
+.offer {
+   &__container {
+      margin: 0 auto;
+      padding: 6px;
+      max-width: 1200px;
+      border-radius: 35px;
+      border-top: 3px solid rgba(84, 54, 42, 1);
+      border-right: 3px solid rgba(84, 54, 42, 1);
+      .offer__item {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background: rgba(173, 113, 74, 0.35);
+         backdrop-filter: blur(2px);
+         border-radius: 35px;
+         background-image: url("../img/offer-img/offer-gradient1.png"), url("../img/offer-img/offer-gradient2.png");
+         background-position-x: left;
+         background-repeat: no-repeat;
+         .offer__title {
+            padding-right: 91px;
+            padding-left: 61px;
+            h2 {
+               font-family: $var7;
+               font-weight: 700;
+               font-size: 56px;
+               text-transform: capitalize;
+               color: $var4;
+               line-height: 0;
+               text-shadow: 0px 69px 19px rgba(32, 19, 22, 0.01), 0px 44px 18px rgba(32, 19, 22, 0.09),
+                  0px 25px 15px rgba(32, 19, 22, 0.31), 0px 11px 11px rgba(32, 19, 22, 0.52),
+                  0px 3px 6px rgba(32, 19, 22, 0.6), 0px 0px 0px rgba(32, 19, 22, 0.62);
+               transform: translateY(-55px);
+            }
+            h3 {
+               font-family: $var6;
+               font-size: 32px;
+               line-height: 218.5%;
+               text-transform: capitalize;
+               color: $var4;
+               .offer__sale {
+                  font-family: $var6;
+                  font-size: 48px;
+                  line-height: 218.5%;
+                  text-transform: capitalize;
+                  color: $var4;
+               }
+            }
+            p {
+               font-family: $var6;
+               font-size: 18px;
+               line-height: 218.5%;
+               text-transform: capitalize;
+               color: #ffffff;
+               width: 619px;
+               #more-offer {
+                  display: none;
+               }
+               &:hover {
+                  #offer-dots {
+                     display: none;
+                  }
+                  #more-offer {
+                     display: block;
+                  }
+               }
+            }
+            .background-btn {
+               padding-top: 32px;
+               a {
+                  font-family: $var6;
+                  font-weight: 400;
+                  font-size: 24px;
+                  line-height: 100%;
+                  text-transform: capitalize;
+                  color: $var4;
+                  padding: 12px 36px;
+                  border-radius: 49px;
+                  background: rgba(247, 225, 188, 0.1);
+                  border-right: 2px solid rgba(224, 168, 114, 1);
+                  border-bottom: 2px solid rgba(248, 228, 190, 1);
+                  border-left: 2px solid rgba(255, 243, 224, 1);
+                  border-top: 2px solid rgba(224, 168, 114, 1);
+                  transition: 0.3s;
+                  &:hover {
+                     background: rgba(247, 225, 188, 0.3);
+                  }
+               }
+            }
+         }
+      }
+   }
+}
