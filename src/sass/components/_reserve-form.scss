@@ -139,7 +139,7 @@
                   }
                }
                .form__phone {
-                  padding-bottom: 34px;
+                  padding-bottom: 22px;
                   input[type="tel"] {
                      width: 100%;
                      height: 54px;
@@ -153,12 +153,73 @@
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                     &:focus-visible {
+                        outline: -webkit-focus-ring-color auto 0px;
+                     }
                   }
                   input[type="tel"]::placeholder {
                      font-family: $var6;
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                  }
+
+                  input:invalid {
+                     // content: "✖";
+                     color: #9d8781;
+                     border: 4px solid #8b0000;
+                  }
+
+                  input:valid {
+                     // content: "✓";
+                     color: #9d8781;
+                     border: 4px solid #009000;
+                  }
+                  .form__tel {
+                     color: $var4;
+                     margin-left: 52px;
+                  }
+               }
+               .form__mail-submit {
+                  display: flex;
+                  input[type="email"] {
+                     width: 100%;
+                     height: 54px;
+                     margin-right: 20px;
+                     border: 1px solid #d6d6d6;
+                     border-radius: 12px;
+                     padding-left: 50px;
+                     background-image: url("../img/reserve-img/form-image/mail-form.svg");
+                     background-repeat: no-repeat;
+                     background-position: 3%;
+                     font-family: $var6;
+                     font-size: 21px;
+                     line-height: 27px;
+                     color: #9d8781;
+                  }
+                  input[type="email"]::placeholder {
+                     font-family: $var6;
+                     font-size: 21px;
+                     line-height: 27px;
+                     color: #9d8781;
+                  }
+                  .reserve__btn {
+                     font-family: $var6;
+                     font-weight: 400;
+                     font-size: 24px;
+                     line-height: 100%;
+                     color: $var4;
+                     padding: 12px 36px;
+                     border-radius: 49px;
+                     background: rgba(247, 225, 188, 0.1);
+                     border-right: 2px solid rgba(224, 168, 114, 1);
+                     border-bottom: 2px solid rgba(248, 228, 190, 1);
+                     border-left: 2px solid rgba(255, 243, 224, 1);
+                     border-top: 2px solid rgba(224, 168, 114, 1);
+                     transition: 0.3s;
+                     &:hover {
+                        background: rgba(247, 225, 188, 0.3);
+                     }
                   }
                }
             }
