@@ -1,20 +1,61 @@
-.footer{
+.footer {
     margin-top: 200px;
     width: 100%;
     position: absolute;
-    &__container{
+    font-family: 'Leiko';
+
+    &__container {
+        display: flex;
         background: rgba(173, 113, 74, 0.35);
         backdrop-filter: blur(2px);
         max-width: 1440px;
         width: 100%;
         padding: 0 15px;
-        &_img{
+
+        &_img {
             position: relative;
             top: -53px;
-            img{
+            margin-right: 30px;
+
+            img {
                 max-width: 323.05px;
                 max-height: 473.55px;
             }
         }
+
+        &_menu {
+            margin-left: 30px;
+            margin-top: 132px;
+            display: flex;
+            .about{
+                margin-right: 119px;
+            }
+            .customer{
+                margin-right: 100px;
+            }
+            .services{
+                margin-right: 100px;
+            }
+
+            ul {
+                list-style-type: none;
+                li {
+                    a {
+                        font-family: 'Leiko';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 2.6;
+                        text-transform: capitalize;
+                        color: $var5;
+                        &:hover{
+                            font-size: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
+
 }
