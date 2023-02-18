@@ -8,12 +8,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 1440px;
+        max-width: 540px;
         width: 100%;
-        margin: 0 15px;
+        margin: 0 auto;
 
         &_mail {
-            display: contents;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             label {
                 font-family: 'Leiko';
                 font-style: normal;
@@ -30,8 +33,9 @@
                 border: 1px solid #D6D6D6;
                 border-radius: 12px;
                 background-color: #FFFFFF;
-                padding: 13.5px 302px 13.5px 48px;
+                padding: 13.5px 0px 13.5px 48px;
                 margin-bottom: 54px;
+                width: 100%;
             }
 
             .btn {
