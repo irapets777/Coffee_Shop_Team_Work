@@ -26,7 +26,6 @@
 
     .our__blog_slider {
         display: flex;
-
         .slider__item {
             background-color: #997D6C;
             backdrop-filter: blur(2px);
@@ -37,6 +36,7 @@
             border-radius: 35px;
             padding: 20px 50px 40px;
             margin-left: 30px;
+            margin-bottom: 93px;
             .item__title {
                 h3{
                     font-family: 'Leiko';
@@ -91,7 +91,7 @@
                 text-decoration: underline;
                 color: #ffffff;
                 float: right;
-                padding-top: 32px;
+                
             }
         }
     }
