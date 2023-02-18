@@ -1,26 +1,62 @@
-.subscribe-newsletter{
+.subscribe-newsletter {
+    font-family: 'Leiko';
     max-width: 100%;
     background: rgba(173, 113, 74, 0.35);
     backdrop-filter: blur(2px);
-    &__container{
+
+    &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
         max-width: 1440px;
         width: 100%;
         margin: 0 15px;
-        &_mail{
-           margin: 55px 0;
-           label{
-            font-family: 'Leiko';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 21px;
-            line-height: 1.7;
-            text-transform: capitalize;
-            color: #F8E4BE;
-            margin-bottom: 54px;
-           }
+
+        &_mail {
+            display: contents;
+            label {
+                font-family: 'Leiko';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 21px;
+                line-height: 2.7;
+                text-transform: capitalize;
+                color: #F8E4BE;
+                margin-bottom: 54px;
+                margin-top: 54px;
+            }
+
+            input {
+                border: 1px solid #D6D6D6;
+                border-radius: 12px;
+                background-color: #FFFFFF;
+                padding: 13.5px 302px 13.5px 48px;
+                margin-bottom: 54px;
+            }
+
+            .btn {
+                align-items: center;
+                padding: 12px 36px;
+                gap: 10px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 1.7;
+                text-transform: capitalize;
+                background: rgba(247, 225, 188, 0.1);
+                color: #F8E4BE;
+                border-radius: 49px;
+                border: 2px solid #F8E4BE;
+                border-right: 2px solid rgba(224, 168, 114, 1);
+                border-bottom: 2px solid rgba(248, 228, 190, 1);
+                border-left: 2px solid rgba(255, 243, 224, 1);
+                border-top: 2px solid rgba(224, 168, 114, 1);
+                transition: 0.3s;
+
+                &:hover {
+                    background: rgba(247, 225, 188, 0.3);
+                }
+            }
         }
     }
 }
