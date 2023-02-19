@@ -5,6 +5,26 @@
     #more-story {
         display: none;
     }
+
+    .swiper-pagination-bullet {
+        height: 16px;
+        width: 16px;
+        background: #744f40;
+    }
+
+    .swiper-pagination-bullet-active {
+        height: 16px;
+        width: 16px;
+        background: #d7b0a0;
+    }
+
+    .swiper-button-next {
+        color: #744f40;
+    }
+
+    .swiper-button-prev {
+        color: #744f40;
+    }
     &__container {
         padding: 0 15px;
         margin: 120px 0 140px;
@@ -18,15 +38,6 @@
             width: 100%;
             height: 100%;
         }
-
-        // .swiper-slide {
-        //     text-align: center;
-        //     font-size: 18px;
-        //     background: #fff;
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        // }
 
         .story__border {
             border-radius: 35px;
