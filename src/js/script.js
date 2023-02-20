@@ -38,6 +38,40 @@ function ourStory() {
   }
 }
 
+Our-Story-Slider
+function ourStoryFirst() {
+  let dotsFirst = document.getElementById("dotsFirst");
+  let moreTextFirst = document.getElementById("more-storyFirst");
+  let btnTextFirst = document.getElementById("myBtnStoryFirst");
+
+  if (dotsFirst.style.display === "none") {
+    dotsFirst.style.display = "inline";
+    btnTextFirst.innerHTML = "More";
+    moreTextFirst.style.display = "none";
+  } else {
+    dotsFirst.style.display = "none";
+    btnTextFirst.innerHTML = "Less";
+    moreTextFirst.style.display = "inline";
+  }
+}
+
+function ourStorySecond() {
+  let dotsSecond = document.getElementById("dotsSecond");
+  let moreTextSecond = document.getElementById("more-storySecond");
+  let btnTextSecond = document.getElementById("myBtnStorySecond");
+
+  if (dotsSecond.style.display === "none") {
+    dotsSecond.style.display = "inline";
+    btnTextSecond.innerHTML = "More";
+    moreTextSecond.style.display = "none";
+  } else {
+    dotsSecond.style.display = "none";
+    btnTextSecond.innerHTML = "Less";
+    moreTextSecond.style.display = "inline";
+  }
+}
+// ================================================================= //
+
 
 
 /**Our story slider */
@@ -133,3 +167,4 @@ function moreText2() {
     moreText2.style.display = "inline";
   }
 }
+
