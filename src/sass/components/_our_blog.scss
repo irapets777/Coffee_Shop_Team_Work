@@ -25,7 +25,6 @@
     }
 
     .our__blog_slider {
-        display: flex;
         .slider__item {
             background-color: #997D6C;
             backdrop-filter: blur(2px);
@@ -95,12 +94,10 @@
                 
             }
         }
-
-        // .slider__arrow{
-        //     img{
-        //         display: flex;
-        //         justify-content: end;
-        //     }
-        // }
+    }
+    .slider__arrow{
+        .arrow__right {
+          float: right;
+        }
     }
 }
