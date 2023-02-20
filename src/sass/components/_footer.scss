@@ -1,61 +1,168 @@
 .footer {
-    margin-top: 200px;
-    width: 100%;
-    position: absolute;
-    font-family: 'Leiko';
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $var6;
+    background: rgba(173, 113, 74, 0.35);
 
     &__container {
         display: flex;
-        background: rgba(173, 113, 74, 0.35);
-        backdrop-filter: blur(2px);
-        max-width: 1440px;
-        width: 100%;
-        padding: 0 15px;
+        align-items: center;
+        justify-content: center;
 
-        &_img {
-            position: relative;
-            top: -53px;
-            margin-right: 30px;
-
-            img {
-                max-width: 323.05px;
-                max-height: 473.55px;
-            }
+        .footer__main_img {
+            padding: 0 30px 0 40px;
+            transform: translate(0px, -56px);
         }
+    }
 
-        &_menu {
-            margin-left: 30px;
-            margin-top: 132px;
-            display: flex;
-            .about{
-                margin-right: 119px;
-            }
-            .customer{
-                margin-right: 100px;
-            }
-            .services{
-                margin-right: 100px;
+    .footer__item {
+        display: flex;
+        gap: 104px;
+
+        .footer__about {
+            h3 {
+                font-size: 20px;
+                white-space: nowrap;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #fff3e0;
+                padding: 14px 0;
             }
 
             ul {
-                list-style-type: none;
+                list-style: none;
+
                 li {
+                    padding: 14px 0;
+
                     a {
-                        font-family: 'Leiko';
-                        font-style: normal;
-                        font-weight: 400;
+                        white-space: nowrap;
                         font-size: 16px;
-                        line-height: 2.6;
-                        text-transform: capitalize;
                         color: $var5;
-                        &:hover{
-                            font-size: 20px;
+                        line-height: 20px;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            color: rgba(247, 225, 188, 0.3);
                         }
                     }
-                    
+                }
+            }
+        }
+
+        .footer__customer {
+            h3 {
+                white-space: nowrap;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #fff3e0;
+                padding: 14px 0;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    padding: 14px 0;
+
+                    a {
+                        white-space: nowrap;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: capitalize;
+                        color: $var5;
+
+                        &:hover {
+                            color: rgba(247, 225, 188, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__services {
+            h3 {
+                white-space: nowrap;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #fff3e0;
+                padding: 14px 0;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    padding: 14px 0;
+
+                    a {
+                        white-space: nowrap;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: capitalize;
+                        color: $var5;
+
+                        &:hover {
+                            color: rgba(247, 225, 188, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__contacts {
+            h3 {
+                white-space: nowrap;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #fff3e0;
+                padding: 14px 0;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    padding: 14px 0;
+
+                    a {
+                        img{
+                            margin-right: 12px;
+                        }
+                        white-space: nowrap;
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $var5;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            color: rgba(247, 225, 188, 0.3);
+                        }
+                    }
                 }
             }
         }
     }
 
+    .footer__copyright {
+        transform: translate(0px, -56px);
+
+        .copyright {
+            text-align: center;
+        }
+
+        p {
+            white-space: nowrap;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: rgba(255, 243, 224, 0.65);
+        }
+    }
 }
