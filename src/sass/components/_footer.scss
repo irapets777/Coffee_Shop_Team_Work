@@ -1,0 +1,181 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $var6;
+    color: $var5;
+
+    &__social {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+        max-width: 95%;
+        text-transform: capitalize;
+    }
+
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(173, 113, 74, 0.35);
+
+        .footer__main_img {
+            padding: 0 30px 0 40px;
+            transform: translate(0px, -56px);
+        }
+    }
+
+    .footer__item {
+        display: flex;
+        gap: 104px;
+
+        .footer__about {
+            h3 {
+                font-size: 20px;
+                white-space: nowrap;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #fff3e0;
+                padding: 14px 0;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    padding: 14px 0;
+
+                    a {
+                        white-space: nowrap;
+                        font-size: 16px;
+                        color: $var5;
+                        line-height: 20px;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            color: rgba(247, 225, 188, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__customer {
+            h3 {
+                white-space: nowrap;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #fff3e0;
+                padding: 14px 0;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    padding: 14px 0;
+
+                    a {
+                        white-space: nowrap;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: capitalize;
+                        color: $var5;
+
+                        &:hover {
+                            color: rgba(247, 225, 188, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__services {
+            h3 {
+                white-space: nowrap;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #fff3e0;
+                padding: 14px 0;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    padding: 14px 0;
+
+                    a {
+                        white-space: nowrap;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: capitalize;
+                        color: $var5;
+
+                        &:hover {
+                            color: rgba(247, 225, 188, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__contacts {
+            h3 {
+                white-space: nowrap;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #fff3e0;
+                padding: 14px 0;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    padding: 14px 0;
+
+                    a {
+                        img {
+                            margin-right: 12px;
+                        }
+
+                        white-space: nowrap;
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $var5;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            color: rgba(247, 225, 188, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__copyright {
+        transform: translate(0px, -56px);
+
+        .copyright {
+            text-align: center;
+        }
+
+        p {
+            white-space: nowrap;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: rgba(255, 243, 224, 0.65);
+        }
+    }
+}
