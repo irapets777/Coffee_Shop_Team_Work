@@ -7,7 +7,20 @@
 //     infinite: true
 //   });
 // });
-
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 // More Text in section OUR-STORY!!! //
 function ourStory() {
   let dots = document.getElementById("dots");
@@ -24,7 +37,8 @@ function ourStory() {
     moreText.style.display = "inline";
   }
 }
-// ================================================================= //
+
+
 
 /**Our story slider */
 
@@ -68,3 +82,4 @@ let slider = $(document).ready(function () {
     // ]
   });
 });
+

@@ -1,14 +1,43 @@
 .story {
-    max-width: 100%;
+    max-width: 80%;
     display: flex;
     justify-content: center;
     #more-story {
         display: none;
     }
+
+    .swiper-pagination-bullet {
+        height: 16px;
+        width: 16px;
+        background: #744f40;
+    }
+
+    .swiper-pagination-bullet-active {
+        height: 16px;
+        width: 16px;
+        background: #d7b0a0;
+    }
+
+    .swiper-button-next {
+        color: #744f40;
+    }
+
+    .swiper-button-prev {
+        color: #744f40;
+    }
     &__container {
         padding: 0 15px;
         margin: 120px 0 140px;
         display: flex;
+
+        .swiper {
+            max-width: 100%;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+        }
 
         .story__border {
             border-radius: 35px;
@@ -27,7 +56,7 @@
                 padding-right: 56px;
                 padding-top: 64px;
                 padding-bottom: 36px;
-                width: 1190px;
+                width: 100%;
                 background: rgba(173, 113, 74, 0.35);
                 backdrop-filter: blur(2px);
                 border-radius: 35px;

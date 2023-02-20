@@ -12,6 +12,20 @@
 @import "components/our-story";
 @import "components/services";
 @import "components/offer";
+
 @import "components/our_blog";
 
+@import "components/reserve-form";
 @import "components/footer";
+
+// Індикатор календаря, не видаляти!!!
+// ::-webkit-calendar-picker-indicator {
+//    background-color: #fff;
+//    background: white;
+//    background-image: url("../img/reserve-img/form-image/date-form.svg");
+//    background-repeat: no-repeat;
+//    background-position: 30%;
+//    padding: 14px 12px;
+//    cursor: pointer;
+//    border-radius: 3px;
+// }
