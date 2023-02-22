@@ -23,22 +23,22 @@ var swiper = new Swiper(".mySwiper", {
 });
 // More Text in section OUR-STORY!!! //
 function ourStory() {
-  let dots = document.getElementById("dots");
-  let moreText = document.getElementById("more-story");
-  let btnText = document.getElementById("myBtnStory");
+  let dotsStart = document.getElementById("dotsStart");
+  let moreTextStart = document.getElementById("more-story");
+  let btnTextStart = document.getElementById("myBtnStory");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "More";
-    moreText.style.display = "none";
+  if (dotsStart.style.display === "none") {
+    dotsStart.style.display = "inline";
+    btnTextStart.innerHTML = "More";
+    moreTextStart.style.display = "none";
   } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Less";
-    moreText.style.display = "inline";
+    dotsStart.style.display = "none";
+    btnTextStart.innerHTML = "Less";
+    moreTextStart.style.display = "inline";
   }
 }
 
-Our-Story-Slider
+// Our-Story-Slider //
 function ourStoryFirst() {
   let dotsFirst = document.getElementById("dotsFirst");
   let moreTextFirst = document.getElementById("more-storyFirst");
@@ -81,40 +81,40 @@ let slider = $(document).ready(function () {
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: false,
-    
+
     // variableWidth: true,
     prevArrow: '<img class="arrow left" src="img/arrow-left.svg" alt="">',
     nextArrow: '<img class="arrow right" src="img/our_blog/arrow-right.svg" alt="">',
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 2,
-          variableWidth: false,
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          variableWidth: false,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          variableWidth: false,
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          variableWidth: false,
-        }
-      }
-    ]
+    // responsive: [
+    //   {
+    //     breakpoint: 1440,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       variableWidth: false,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 992,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       variableWidth: false,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       variableWidth: false,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 576,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       variableWidth: false,
+    //     }
+    //   }
+    // ]
   });
 });
 
