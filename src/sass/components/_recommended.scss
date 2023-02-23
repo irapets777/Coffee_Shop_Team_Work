@@ -23,11 +23,12 @@
          justify-content: center;
 
          .swiper-button-next2 {
-            color: #f30505;
+            color: transparent;
          }
 
          .swiper-button-prev2 {
-            color: #ff0000;
+            color: transparent;
+            transform: rotate(180deg);
          }
 
          .slider-content {
