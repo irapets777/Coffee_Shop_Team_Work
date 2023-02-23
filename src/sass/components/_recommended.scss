@@ -1,0 +1,154 @@
+.recommended {
+   max-width: 100%;
+   &__container {
+      padding: 0 133px;
+      .recommended__title {
+         padding-bottom: 64px;
+         font-family: $var7;
+         font-weight: 700;
+         font-size: 64px;
+         line-height: 77px;
+         text-transform: capitalize;
+         text-align: center;
+         background: linear-gradient(262.07deg, #f8e4be 14.64%, #fff3e0 40.26%, #fff8e8 62%, #dfc39d 93.82%);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+         text-fill-color: transparent;
+         text-shadow: 185px 140px 65px rgba(0, 0, 0, 0.01), 118px 90px 59px rgba(0, 0, 0, 0.12),
+            67px 51px 50px rgba(0, 0, 0, 0.39), 30px 22px 37px rgba(0, 0, 0, 0.67), 7px 6px 20px rgba(0, 0, 0, 0.77);
+      }
+      .recommended__slider {
+         display: flex;
+         justify-content: center;
+
+         .swiper-button-next2,
+         .swiper-button-prev2 {
+            width: calc(var(--swiper-navigation-size) / 2 * 4);
+            height: var(--swiper-navigation-size);
+            margin-top: calc(220px - (var(--swiper-navigation-size) / 4));
+            z-index: 10;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--swiper-navigation-color, var(--swiper-theme-color));
+         }
+         .swiper-button-prev2 {
+            left: var(--swiper-navigation-sides-offset, 42%);
+            right: auto;
+            &::after {
+               display: none;
+            }
+            .arrow__main {
+               transform: rotate(180deg);
+            }
+            .arrow__hover {
+               display: none;
+            }
+            &:hover {
+               .arrow__main {
+                  display: none;
+               }
+               .arrow__hover {
+                  display: block;
+               }
+            }
+         }
+
+         .swiper-button-next2 {
+            right: var(--swiper-navigation-sides-offset, 42%);
+            left: auto;
+            &::after {
+               display: none;
+            }
+            color: transparent;
+            .arrow__hover {
+               display: none;
+            }
+            &:hover {
+               .arrow__main {
+                  display: none;
+               }
+               .arrow__hover {
+                  display: block;
+                  transform: rotate(180deg);
+               }
+            }
+         }
+
+         .slider-content {
+            display: flex;
+            gap: 40px;
+            padding-bottom: 105px;
+            .recommended__card,
+            .swiper-slide2 {
+               max-width: 362px;
+
+               .recommended__card-main {
+                  background: rgba(173, 113, 74, 0.35);
+                  backdrop-filter: blur(2px);
+                  border-radius: 35px 35px 0 0;
+                  position: relative;
+                  .recommended__info {
+                     position: absolute;
+                     top: 20px;
+                     left: 20px;
+                  }
+                  .recommended__card-img {
+                  }
+                  .recommended__bucket {
+                     display: flex;
+                     flex-direction: row-reverse;
+                     position: absolute;
+                     right: 10px;
+                     bottom: 10px;
+                     cursor: default;
+                     img {
+                        cursor: pointer;
+                     }
+                  }
+               }
+               .recommended__card-title {
+                  background: rgba(255, 255, 255, 0.15);
+                  border-radius: 0 0 35px 35px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 18px 0;
+                  h4 {
+                     font-family: $var6;
+                     font-weight: 600;
+                     font-size: 16px;
+                     line-height: 210%;
+                     text-transform: capitalize;
+                     color: #ffffff;
+                     padding-right: 12px;
+                     border-width: 3px;
+                     border-style: solid;
+                     border-left: 0px;
+                     border-image: linear-gradient(
+                           to bottom,
+                           rgba(109, 84, 74, 0) -9.84%,
+                           #b59183 43.95%,
+                           rgba(109, 84, 74, 0) 114.55%
+                        )
+                        0 50%;
+                  }
+                  background: linear-gradient(180deg);
+
+                  p {
+                     font-family: $var6;
+                     font-size: 16px;
+                     line-height: 33px;
+                     text-transform: capitalize;
+                     color: #ffffff;
+                     padding-left: 12px;
+                     padding-top: 2px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

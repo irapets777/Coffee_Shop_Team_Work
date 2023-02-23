@@ -7,6 +7,7 @@
 //     infinite: true
 //   });
 // });
+// Our-Story-Slider //
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -38,7 +39,7 @@ function ourStory() {
   }
 }
 
-// Our-Story-Slider //
+// Our-Story-Slider more text //
 function ourStoryFirst() {
   let dotsFirst = document.getElementById("dotsFirst");
   let moreTextFirst = document.getElementById("more-storyFirst");
@@ -71,10 +72,23 @@ function ourStorySecond() {
   }
 }
 // ================================================================= //
+// Table JS Code //
 
+// ================================================================= //
+// Slider Recomended //
+var swiper = new Swiper(".recommended__slider", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
-
-/**Our story slider */
+});
+// ================================================================= //
+/**Our Blog slider */
 
 let slider = $(document).ready(function () {
   $('.our__blog_slider').slick({
@@ -167,4 +181,4 @@ function moreText2() {
     moreText2.style.display = "inline";
   }
 }
-
+// ================================================================= //
