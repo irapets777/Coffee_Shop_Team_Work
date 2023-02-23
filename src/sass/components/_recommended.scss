@@ -35,7 +35,7 @@
             color: var(--swiper-navigation-color, var(--swiper-theme-color));
          }
          .swiper-button-prev2 {
-            left: var(--swiper-navigation-sides-offset, 40%);
+            left: var(--swiper-navigation-sides-offset, 42%);
             right: auto;
             &::after {
                display: none;
@@ -57,7 +57,7 @@
          }
 
          .swiper-button-next2 {
-            right: var(--swiper-navigation-sides-offset, 40%);
+            right: var(--swiper-navigation-sides-offset, 42%);
             left: auto;
             &::after {
                display: none;
