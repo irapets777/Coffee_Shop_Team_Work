@@ -78,7 +78,7 @@ function ourStorySecond() {
 // Slider Recomended //
 var swiper = new Swiper(".recommended__slider", {
   slidesPerView: 3,
-  spaceBetween: 0,
+  spaceBetween: 30,
   centeredSlides: true,
   loop: true,
   navigation: {
@@ -88,7 +88,7 @@ var swiper = new Swiper(".recommended__slider", {
 
 });
 // ================================================================= //
-/**Our story slider */
+/**Our Blog slider */
 
 let slider = $(document).ready(function () {
   $('.our__blog_slider').slick({

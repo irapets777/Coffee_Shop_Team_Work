@@ -22,18 +22,65 @@
          display: flex;
          justify-content: center;
 
-         .swiper-button-next2 {
-            color: transparent;
+         .swiper-button-next2,
+         .swiper-button-prev2 {
+            width: calc(var(--swiper-navigation-size) / 2 * 4);
+            height: var(--swiper-navigation-size);
+            margin-top: calc(220px - (var(--swiper-navigation-size) / 4));
+            z-index: 10;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--swiper-navigation-color, var(--swiper-theme-color));
+         }
+         .swiper-button-prev2 {
+            left: var(--swiper-navigation-sides-offset, 40%);
+            right: auto;
+            &::after {
+               display: none;
+            }
+            .arrow__main {
+               transform: rotate(180deg);
+            }
+            .arrow__hover {
+               display: none;
+            }
+            &:hover {
+               .arrow__main {
+                  display: none;
+               }
+               .arrow__hover {
+                  display: block;
+               }
+            }
          }
 
-         .swiper-button-prev2 {
+         .swiper-button-next2 {
+            right: var(--swiper-navigation-sides-offset, 40%);
+            left: auto;
+            &::after {
+               display: none;
+            }
             color: transparent;
-            transform: rotate(180deg);
+            .arrow__hover {
+               display: none;
+            }
+            &:hover {
+               .arrow__main {
+                  display: none;
+               }
+               .arrow__hover {
+                  display: block;
+                  transform: rotate(180deg);
+               }
+            }
          }
 
          .slider-content {
             display: flex;
             gap: 40px;
+            padding-bottom: 105px;
             .recommended__card,
             .swiper-slide2 {
                max-width: 362px;
@@ -42,7 +89,6 @@
                   background: rgba(173, 113, 74, 0.35);
                   backdrop-filter: blur(2px);
                   border-radius: 35px 35px 0 0;
-                  // padding: 20px 10px 10px 20px;
                   position: relative;
                   .recommended__info {
                      position: absolute;
