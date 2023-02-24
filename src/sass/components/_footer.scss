@@ -4,6 +4,7 @@
     flex-direction: column;
     font-family: $var6;
     color: $var5;
+    overflow: hidden;
 
     &__social {
         font-size: 16px;
@@ -14,7 +15,6 @@
         max-width: 95%;
         text-transform: capitalize;
     }
-
 
     &__container {
         display: flex;
