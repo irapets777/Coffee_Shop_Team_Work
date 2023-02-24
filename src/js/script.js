@@ -182,24 +182,46 @@ function moreText2() {
   }
 }
 // ================================================================= //
-/**popular menu section our menu btn */
+/**Popular Menu section our menu btn */
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("openModal");
 let closeBtn = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
   btn.style.display = "none";
 }
 
-closeBtn.onclick = function() {
+closeBtn.onclick = function () {
   modal.style.display = "none";
   btn.style.display = "block";
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
     btn.style.display = "block";
   }
 }
+// ================================================================= //
+// Customer Review SLIDER //
+var swiper = new Swiper(".review__slider-container", {
+  slidesPerView: 3,
+  spaceBetween: 84,
+  effect: "coverflow",
+  centeredSlides: true,
+  loop: true,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 3,
+    slideShadows: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+
+});
+// ================================================================= //

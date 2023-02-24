@@ -1,0 +1,81 @@
+.review {
+   display: flex;
+   justify-content: center;
+   &__container {
+      padding: 184px 133px;
+      .review__border {
+         border-radius: 35px;
+         border-left: 3px solid rgba(84, 54, 42, 1);
+         border-bottom: 3px solid rgba(84, 54, 42, 1);
+         width: 100%;
+         height: 100%;
+         padding: 6px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         .review__slider-container {
+            width: 1175px;
+            height: 461px;
+            border-radius: 35px;
+            .swiper-button-next3,
+            .swiper-button-prev3 {
+               color: $var4;
+            }
+            .review__slider {
+               .review__card {
+                  max-width: 342px;
+                  max-height: 362px;
+                  background: rgba(102, 55, 29, 0.75);
+                  border-radius: 15px 15px 0px 0px;
+                  display: flex;
+                  align-items: center;
+                  align-self: flex-end;
+                  flex-direction: column;
+                  cursor: pointer;
+                  &:hover {
+                     background: rgba(116, 71, 47, 0.75);
+                  }
+                  .review__card-image {
+                     margin-top: 22px;
+                     margin-bottom: 22px;
+                     img {
+                        border-radius: 50%;
+                        border: 4px solid $var4;
+                        max-width: 102px;
+                        max-height: 102px;
+                     }
+                  }
+                  .review__name {
+                     max-width: 62px;
+                     p {
+                        text-align: center;
+                        font-family: "Leiko";
+                        font-size: 16px;
+                        line-height: 150.5%;
+                        letter-spacing: 0.035em;
+                        text-transform: capitalize;
+                        color: #f0e3d0;
+                     }
+                  }
+                  .review__star {
+                     margin-top: 22px;
+                     margin-bottom: 22px;
+                  }
+                  .review__describe {
+                     max-width: 285px;
+                     p {
+                        font-family: $var6;
+                        font-size: 12px;
+                        line-height: 150.5%;
+                        text-align: center;
+                        letter-spacing: 0.035em;
+                        text-transform: capitalize;
+                        color: #f0e3d0;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
