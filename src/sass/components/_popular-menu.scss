@@ -2,6 +2,7 @@
    max-width: 100%;
    &__container {
       .menu__title {
+         padding-top: 148px;
          padding-bottom: 216px;
          h2 {
             font-family: $var7;
@@ -19,23 +20,26 @@
 
             text-shadow: 185px 140px 65px rgba(0, 0, 0, 0.01), 118px 90px 59px rgba(0, 0, 0, 0.12),
                67px 51px 50px rgba(0, 0, 0, 0.39), 30px 22px 37px rgba(0, 0, 0, 0.67), 7px 6px 20px rgba(0, 0, 0, 0.77),
-               0px 0px 0px rgba(151, 84, 39, 0.78);
-         }
+               0px 0px 0px rgba(255, 0, 0, 0.78);
+         } // Пробуй міняти цей червоний колір! //
       }
       .menu__main {
          background-position: center -230px;
          background-repeat: no-repeat;
          width: 100%;
-
          display: flex;
-         justify-content: space-around;
+         justify-content: center;
+         position: relative;
          .menu__gradient {
             position: absolute;
             z-index: -1;
             width: 840px;
             height: 840px;
-            left: 304px;
-            top: 166px;
+            top: 0%;
+            right: 0%;
+            left: 0%;
+            bottom: 0%;
+            transform: translate(25%, -20%);
             background: #775142;
             opacity: 0.8;
             filter: blur(270.156px);
@@ -47,13 +51,16 @@
                   width: 352px;
                   padding-bottom: 128px;
                   &:first-child {
-                     transform: translateX(-80px);
+                     transform: translateX(-220px);
                   }
                   &:nth-child(2) {
-                     transform: translateX(-140px);
+                     transform: translateX(-280px);
                   }
                   &:nth-child(3) {
-                     transform: translateX(-80px);
+                     transform: translateX(-220px);
+                  }
+                  &:nth-child(4) {
+                     transform: translateX(-180px);
                   }
                   .menu__items {
                      display: flex;
@@ -119,13 +126,16 @@
                   width: 352px;
                   padding-bottom: 128px;
                   &:first-child {
-                     transform: translateX(80px);
+                     transform: translateX(220px);
                   }
                   &:nth-child(2) {
-                     transform: translateX(140px);
+                     transform: translateX(280px);
                   }
                   &:nth-child(3) {
-                     transform: translateX(80px);
+                     transform: translateX(220px);
+                  }
+                  &:nth-child(4) {
+                     transform: translateX(180px);
                   }
                   .menu__items {
                      display: flex;
