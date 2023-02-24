@@ -90,12 +90,36 @@
                   backdrop-filter: blur(2px);
                   border-radius: 35px 35px 0 0;
                   position: relative;
+                  cursor: pointer;
+                  &:hover {
+                     background: linear-gradient(90deg, #54372a, #745f58);
+                     animation: recomend-gradient 2.5s infinite ease-in-out;
+                     background-size: 300% 300%;
+                  }
+                  @keyframes recomend-gradient {
+                     0% {
+                        background-position: 0 50%;
+                     }
+
+                     50% {
+                        background-position: 100% 50%;
+                     }
+
+                     100% {
+                        background-position: 0 50%;
+                     }
+                  }
+
                   .recommended__info {
                      position: absolute;
                      top: 20px;
                      left: 20px;
                   }
                   .recommended__card-img {
+                     // transition: 0.3s ease-in-out;
+                     // &:hover {
+                     //    transform: scale(1.2);
+                     // }
                   }
                   .recommended__bucket {
                      display: flex;
@@ -135,7 +159,6 @@
                         )
                         0 50%;
                   }
-                  background: linear-gradient(180deg);
 
                   p {
                      font-family: $var6;
