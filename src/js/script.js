@@ -1,12 +1,3 @@
-// let slider = $(document).ready(function () {
-//   $('.your-class').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     dots: true,
-//     infinite: true
-//   });
-// });
 // Our-Story-Slider //
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
@@ -90,47 +81,47 @@ var swiper = new Swiper(".recommended__slider", {
 // ================================================================= //
 /**Our Blog slider */
 
-let slider = $(document).ready(function () {
-  $('.our__blog_slider').slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    dots: false,
+// let slider = $(document).ready(function () {
+//   $('.our__blog_slider').slick({
+//     slidesToShow: 2,
+//     slidesToScroll: 1,
+//     dots: false,
 
-    // variableWidth: true,
-    prevArrow: '<img class="arrow left" src="img/arrow-left.svg" alt="">',
-    nextArrow: '<img class="arrow right" src="img/our_blog/arrow-right.svg" alt="">',
-    // responsive: [
-    //   {
-    //     breakpoint: 1440,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       variableWidth: false,
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 992,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       variableWidth: false,
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       variableWidth: false,
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 576,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       variableWidth: false,
-    //     }
-    //   }
-    // ]
-  });
-});
+//     // variableWidth: true,
+//     prevArrow: '<img class="arrow left" src="img/arrow-left.svg" alt="">',
+//     nextArrow: '<img class="arrow right" src="img/our_blog/arrow-right.svg" alt="">',
+//     // responsive: [
+//     //   {
+//     //     breakpoint: 1440,
+//     //     settings: {
+//     //       slidesToShow: 2,
+//     //       variableWidth: false,
+//     //     }
+//     //   },
+//     //   {
+//     //     breakpoint: 992,
+//     //     settings: {
+//     //       slidesToShow: 2,
+//     //       variableWidth: false,
+//     //     }
+//     //   },
+//     //   {
+//     //     breakpoint: 768,
+//     //     settings: {
+//     //       slidesToShow: 1,
+//     //       variableWidth: false,
+//     //     }
+//     //   },
+//     //   {
+//     //     breakpoint: 576,
+//     //     settings: {
+//     //       slidesToShow: 1,
+//     //       variableWidth: false,
+//     //     }
+//     //   }
+//     // ]
+//   });
+// });
 
 
 function moreText() {
@@ -164,7 +155,6 @@ function moreText1() {
     moreText1.style.display = "inline";
   }
 }
-
 
 function moreText2() {
   let dots2 = document.getElementById("less2");
