@@ -212,8 +212,8 @@ var swiper = new Swiper(".review__slider-container", {
   centeredSlides: true,
   loop: true,
   coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
+    rotate: 0,
+    stretch: 25,
     depth: 100,
     modifier: 3,
     slideShadows: true,

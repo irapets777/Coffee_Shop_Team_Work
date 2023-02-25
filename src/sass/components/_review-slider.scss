@@ -35,6 +35,13 @@
                   &:hover {
                      background: rgba(116, 71, 47, 0.75);
                   }
+                  .review__marks {
+                     display: flex;
+                     justify-content: end;
+                     align-items: end;
+                     width: 85%;
+                     transform: translateY(-12px);
+                  }
                   .review__card-image {
                      margin-top: 22px;
                      margin-bottom: 22px;
