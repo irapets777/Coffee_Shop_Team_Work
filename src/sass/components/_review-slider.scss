@@ -3,6 +3,22 @@
    justify-content: center;
    &__container {
       padding: 184px 133px;
+      .review__title {
+         h2 {
+            font-family: $var7;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 77px;
+            transform: translateY(-50px);
+            /* identical to box height */
+            height: 0;
+            color: $var4;
+            position: relative;
+            z-index: 20;
+            text-align: center;
+            text-transform: capitalize;
+         }
+      }
       .review__border {
          border-radius: 35px;
          border-left: 3px solid rgba(84, 54, 42, 1);
