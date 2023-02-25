@@ -1,130 +1,147 @@
 .our__blog {
     // width: 100vw;
-    background-color: #53362A;
+    background-color: #53362a;
     background-image: url("../img/our_blog/Bg-Of-blog1.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 148px;
-    #more {
-        display: none;
-    }
-    #more1{
-        display: none;
-    }
-    #more2{
-        display: none;
-    }
     .our__blog_title {
-        font-family: 'Dancing Script';
+        font-family: "Dancing Script";
         font-weight: 700;
         font-size: 64px;
         line-height: 1.2;
         transform: translateY(-50px);
         text-align: center;
         text-transform: capitalize;
-        background: linear-gradient(262.07deg, #F8E4BE 14.64%, #FFF3E0 40.26%, #FFF8E8 62%, #DFC39D 93.82%);
+        background: linear-gradient(262.07deg, #f8e4be 14.64%, #fff3e0 40.26%, #fff8e8 62%, #dfc39d 93.82%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-shadow: 185px 140px 65px rgba(0, 0, 0, 0.01), 118px 90px 59px rgba(0, 0, 0, 0.12), 67px 51px 50px rgba(0, 0, 0, 0.39), 30px 22px 37px rgba(0, 0, 0, 0.67), 7px 6px 20px rgba(0, 0, 0, 0.77);
+        text-shadow: 185px 140px 65px rgba(0, 0, 0, 0.01), 118px 90px 59px rgba(0, 0, 0, 0.12),
+            67px 51px 50px rgba(0, 0, 0, 0.39), 30px 22px 37px rgba(0, 0, 0, 0.67), 7px 6px 20px rgba(0, 0, 0, 0.77);
     }
-
-    .our__blog_slider {
-        
-        .slider__item {
-            background-color: #997D6C;
-            backdrop-filter: blur(2px);
-            max-width: 534px;
-            height: 100%;
-            max-height: 378px;
-            border-radius: 35px;
-            padding: 20px 50px 40px;
-            margin-left: 30px;
-            margin-bottom: 93px;
-            .item__title {
-                h3{
-                    font-family: 'Leiko';
-                    font-weight: 400;
-                    font-size: 24px;
-                    line-height: 218.5%;
-                    text-transform: capitalize;
-                    color: #FFFFFF;
-                    margin-bottom: 19px;
-                    white-space: nowrap;
+    .container__blog-slider {
+        #more {
+            display: none;
+        }
+        #more1 {
+            display: none;
+        }
+        #more2 {
+            display: none;
+        }
+        .swiper-button-prev4 {
+            left: 10%;
+        }
+        .swiper-button-next4 {
+            right: 10%;
+        }
+        .swiper-button-next4,
+        .swiper-button-prev4 {
+            position: absolute;
+            top: var(--swiper-navigation-top-offset, 90%);
+            width: calc(var(--swiper-navigation-size) / 44 * 27);
+            height: var(--swiper-navigation-size);
+            margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+            z-index: 10;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $var4;
+        }
+        .swiper-button-next4.swiper-button-disabled,
+        .swiper-button-prev4.swiper-button-disabled {
+            opacity: 0;
+        }
+        .our__blog_slider {
+            display: flex;
+            .slider__item {
+                background-color: #997d6c;
+                backdrop-filter: blur(2px);
+                width: 534px !important;
+                border-radius: 35px;
+                padding: 20px 50px 40px;
+                margin-left: 30px;
+                margin-bottom: 93px;
+                .item__title {
+                    h3 {
+                        font-family: "Leiko";
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 218.5%;
+                        text-transform: capitalize;
+                        color: #ffffff;
+                        margin-bottom: 19px;
+                        white-space: nowrap;
+                    }
                 }
-            }
 
-            .item__describe {
-                p {
-                    font-family: 'Leiko';
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 227%;
-                    text-transform: capitalize;
-                    color: #F7E5DA;
+                .item__describe {
+                    width: 434px;
+                    p {
+                        font-family: "Leiko";
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 227%;
+                        text-transform: capitalize;
+                        color: #f7e5da;
+                    }
                 }
 
-            }
+                .item__icon {
+                    display: flex;
+                    margin-top: 10px;
+                    img {
+                        min-width: 60px;
+                        min-height: 36px;
+                        margin-right: 27px;
+                    }
+                }
 
-            .item__icon {
-                display: flex;
-                margin-top: 10px;
-                img{
-                    min-width: 60px;
-                    min-height: 36px;
-                    margin-right: 27px;
+                .icon__describe {
+                    display: flex;
+                    margin-top: 20px;
+                    img {
+                        margin-right: 7px;
+                    }
+                    p {
+                        margin-right: 7px;
+                        font-family: "Leiko";
+                        font-weight: 400;
+                        font-size: 8.92941px;
+                        line-height: 218.5%;
+                        text-transform: capitalize;
+                        color: #000000;
+                    }
                 }
-            }
 
-            .icon__describe {
-                display: flex;
-                margin-top: 20px;
-                img{
-                    margin-right: 7px;
+                .icon__descrition {
+                    margin-left: 45px;
+                    display: flex;
+                    p {
+                        font-family: "Leiko";
+                        font-weight: 400;
+                        font-size: 12.76px;
+                        line-height: 218.5%;
+                        text-transform: capitalize;
+                        color: #f8e4be;
+                        margin-right: 45px;
+                    }
                 }
-                p{
-                    margin-right: 7px;
-                    font-family: 'Leiko';
-                    font-weight: 400;
-                    font-size: 8.92941px;
-                    line-height: 218.5%;
-                    text-transform: capitalize;
-                    color: #000000;
+                .more__text {
+                    background: none;
+                    border: none;
+                    font-family: $var6;
+                    font-size: 20px;
+                    line-height: 135%;
+                    text-align: right;
+                    text-decoration: underline;
+                    color: #ffffff;
+                    float: right;
                 }
-            }
-
-            .icon__descrition{
-                margin-left: 45px;
-                display: flex;
-                p{
-                    font-family: 'Leiko';
-                    font-weight: 400;
-                    font-size: 12.76px;
-                    line-height: 218.5%;
-                    text-transform: capitalize;
-                    color: #F8E4BE;
-                    margin-right: 45px;
-                }
-            }
-            .more__text {
-                background: none;
-                border: none;
-                font-family: $var6;
-                font-size: 20px;
-                line-height: 135%;
-                text-align: right;
-                text-decoration: underline;
-                color: #ffffff;
-                float: right;
-                
             }
         }
-        .slick-arrow{
-            float: right;
-        }
-    }
-    .slider__arrow{
-        
     }
 }

@@ -14,6 +14,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 // More Text in section OUR-STORY!!! //
+// One Story //
 function ourStory() {
   let dotsStart = document.getElementById("dotsStart");
   let moreTextStart = document.getElementById("more-story");
@@ -29,8 +30,7 @@ function ourStory() {
     moreTextStart.style.display = "inline";
   }
 }
-
-// Our-Story-Slider more text //
+// Two Story //
 function ourStoryFirst() {
   let dotsFirst = document.getElementById("dotsFirst");
   let moreTextFirst = document.getElementById("more-storyFirst");
@@ -46,7 +46,7 @@ function ourStoryFirst() {
     moreTextFirst.style.display = "inline";
   }
 }
-
+// Three Story //
 function ourStorySecond() {
   let dotsSecond = document.getElementById("dotsSecond");
   let moreTextSecond = document.getElementById("more-storySecond");
@@ -65,6 +65,8 @@ function ourStorySecond() {
 // ================================================================= //
 // Table JS Code //
 
+
+
 // ================================================================= //
 // Slider Recomended //
 var swiper = new Swiper(".recommended__slider", {
@@ -80,50 +82,19 @@ var swiper = new Swiper(".recommended__slider", {
 });
 // ================================================================= //
 /**Our Blog slider */
+var swiper = new Swiper(".container__blog-slider", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  centeredSlides: false,
+  loop: false,
+  navigation: {
+    nextEl: ".swiper-button-next4",
+    prevEl: ".swiper-button-prev4",
+  },
 
-// let slider = $(document).ready(function () {
-//   $('.our__blog_slider').slick({
-//     slidesToShow: 2,
-//     slidesToScroll: 1,
-//     dots: false,
+});
 
-//     // variableWidth: true,
-//     prevArrow: '<img class="arrow left" src="img/arrow-left.svg" alt="">',
-//     nextArrow: '<img class="arrow right" src="img/our_blog/arrow-right.svg" alt="">',
-//     // responsive: [
-//     //   {
-//     //     breakpoint: 1440,
-//     //     settings: {
-//     //       slidesToShow: 2,
-//     //       variableWidth: false,
-//     //     }
-//     //   },
-//     //   {
-//     //     breakpoint: 992,
-//     //     settings: {
-//     //       slidesToShow: 2,
-//     //       variableWidth: false,
-//     //     }
-//     //   },
-//     //   {
-//     //     breakpoint: 768,
-//     //     settings: {
-//     //       slidesToShow: 1,
-//     //       variableWidth: false,
-//     //     }
-//     //   },
-//     //   {
-//     //     breakpoint: 576,
-//     //     settings: {
-//     //       slidesToShow: 1,
-//     //       variableWidth: false,
-//     //     }
-//     //   }
-//     // ]
-//   });
-// });
-
-
+// One Blog //
 function moreText() {
   let dots = document.getElementById("less");
   let moreText = document.getElementById("more");
@@ -140,6 +111,7 @@ function moreText() {
   }
 }
 
+// Two Blog //
 function moreText1() {
   let dots1 = document.getElementById("less1");
   let moreText1 = document.getElementById("more1");
@@ -156,6 +128,7 @@ function moreText1() {
   }
 }
 
+// Three Blog //
 function moreText2() {
   let dots2 = document.getElementById("less2");
   let moreText2 = document.getElementById("more2");
