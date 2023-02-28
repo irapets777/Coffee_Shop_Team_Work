@@ -5,9 +5,24 @@
    background-size: cover;
    background-repeat: no-repeat;
    background-position: 0px;
+   // Подумати над цим варіантом!!! //
+   // background-position: right 100%;
+   // background-size: contain;
+   // background-attachment: fixed;
+   // background-repeat: no-repeat;
+   @media screen and (max-width: 1100px) {
+      background-position: -80px;
+   }
+   @media screen and (max-width: 800px) {
+      background-position: right 100%;
+      background-size: contain;
+      background-attachment: fixed;
+   }
 
    &__container {
       display: flex;
+      position: relative;
+
       .container__blur-first {
          width: 450px;
          height: 450px;
@@ -32,8 +47,16 @@
          z-index: 20;
          padding-top: 256px;
          padding-left: 104px;
-         flex: 0 0 auto;
          width: 55%;
+         @media screen and (max-width: 1020px) {
+            width: 100%;
+         }
+         @media screen and (max-width: 800px) {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
          h1 {
             font-family: "Dancing script";
             font-weight: 700;
@@ -57,6 +80,10 @@
                font-size: 24px;
                line-height: 195%;
                color: #dabb9e;
+               @media screen and (max-width: 800px) {
+                  text-align: center;
+                  text-overflow: ellipsis;
+               }
             }
          }
 
@@ -95,6 +122,14 @@
             border-top: 3.77px solid rgba(84, 54, 42, 1);
             background-image: url("../img/hero-img/hero-cup.png");
             background-repeat: no-repeat;
+            @media screen and (max-width: 800px) {
+               margin-left: 0px;
+               width: -webkit-fill-available;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+            }
             h3 {
                font-family: $var7;
                background: linear-gradient(250.73deg, #e0a872 13.76%, #f8e4be 49.91%, #fff3e0 58.47%, #e0a872 95.09%);
@@ -106,6 +141,11 @@
                margin-top: 108px;
                margin-right: 22px;
                margin-bottom: 45px;
+               @media screen and (max-width: 800px) {
+                  margin-right: 0px;
+                  text-align: center;
+                  font-size: 38px;
+               }
             }
             a {
                font-family: $var6;
@@ -123,6 +163,12 @@
                border-left: 1px solid rgba(255, 243, 224, 1);
                border-top: 1px solid rgba(224, 168, 114, 1);
                transition: 0.3s;
+               @media screen and (max-width: 800px) {
+                  margin-right: 0px;
+                  float: none;
+                  padding: 10px;
+                  display: inline-flex;
+               }
                &:hover {
                   background: rgba(247, 225, 188, 0.3);
                }
@@ -133,11 +179,13 @@
          }
       }
       .hero__item {
-         flex: 0 0 auto;
          width: 45%;
          z-index: -10;
          background: radial-gradient(114.24% 73.21% at 98.55% 92.63%, #3a1b1a 0%, rgba(124, 87, 60, 0) 100%), #7c573c;
          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+         @media screen and (max-width: 1020px) {
+            display: none;
+         }
       }
    }
 }
