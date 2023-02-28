@@ -112,7 +112,7 @@
                 overflow: hidden;
 
                 @media screen and (max-width:900px) {
-                    left: 10px;
+                    right: 10px;
                 }
 
                 span {
@@ -154,6 +154,16 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    ul{
+                        li{
+                            a{
+                                font-family: $var6;
+                                font-size: 20px;
+                                color: $var1;
+
+                            }
+                        }
+                    }
                 }
                 &.open {
                     display: block;
