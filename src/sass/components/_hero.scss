@@ -1,10 +1,9 @@
 .hero {
    width: 100%;
    margin: 0 auto;
-   background-image: url("../img/hero-img/coffee-hero-items-beans.png");
-   background-size: cover;
    background-repeat: no-repeat;
-   background-position: bottom right 100%;
+   background-position: bottom right;
+   background-size: 1440px 1050px;
    @media screen and (max-width: 1100px) {
       background-position: right 100%;
       background-size: contain;
@@ -58,7 +57,7 @@
       }
       .hero__main {
          z-index: 20;
-         padding-top: 294px;
+         padding-top: 244px;
          padding-left: 104px;
          width: 55%;
          @media screen and (max-width: 1100px) {
