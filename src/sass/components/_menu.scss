@@ -1,6 +1,7 @@
 .menu {
    max-width: 100%;
-
+   background-repeat: no-repeat;
+   background-position: left 30%, 20% 13%, 90.5% 80%, right 95%;
    &__container {
       .menu__title {
          padding-top: 148px;
@@ -35,20 +36,19 @@
          justify-content: center;
          position: relative;
 
-         // .menu__gradient {
-         //    position: absolute;
-         //    z-index: -1;
-         //    max-width: 840px;
-         //    max-height: 840px;
-         //    top: 0%;
-         //    right: 0%;
-         //    left: 0%;
-         //    bottom: 0%;
-         //    transform: translate(25%, -20%);
-         //    background: #775142;
-         //    opacity: 0.8;
-         //    filter: blur(270.156px);
-         // }
+         .menu__gradient {
+            position: absolute;
+            z-index: -1;
+            max-width: 100%;
+            max-height: 100%;
+            top: 0%;
+            right: 0%;
+            left: 0%;
+            bottom: 20%;
+            background: #775142;
+            opacity: 0.8;
+            filter: blur(270.156px);
+         }
          .first__line-menu {
             display: flex;
             justify-content: space-between;
@@ -352,7 +352,7 @@
                .menu__border-gradient {
                   display: flex;
                   align-items: center;
-                  padding-bottom: 115px;
+                  padding-bottom: 68px;
 
                   .border__line {
                      width: 100%;
@@ -384,86 +384,86 @@
                }
             }
          }
-      }
-   }
+         .modal {
+            .modal-content {
+               background-image: url("../img/menu-img/menu-letter.png");
 
-   .modal {
-      .modal-content {
-         background-image: url("../img/menu-img/menu-letter.png");
+               margin: 0 auto;
+               padding: 20px;
+               width: 80%;
+               max-width: 800px;
+               height: 100%;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               h2 {
+                  font-family: "Dancing Script";
+                  font-weight: 700;
+                  font-size: 64px;
+                  line-height: 77px;
+                  text-align: center;
+                  text-transform: capitalize;
 
-         margin: 0 auto;
-         padding: 20px;
-         width: 80%;
-         max-width: 800px;
-         height: 100%;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         h2 {
-            font-family: "Dancing Script";
-            font-weight: 700;
-            font-size: 64px;
-            line-height: 77px;
-            text-align: center;
-            text-transform: capitalize;
+                  background: linear-gradient(262.07deg, #573608 14.64%, #88601f 40.26%, #8d501d 62%, #683f05 93.82%);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  text-fill-color: transparent;
+               }
+               p {
+                  font-family: "Leiko";
+                  font-weight: 400;
+                  font-size: 36px;
+                  line-height: 67.5%;
+                  margin-top: 30px;
+                  color: #664224;
+                  cursor: pointer;
+                  transition: 0.3s;
+                  &:hover {
+                     color: #743006;
+                     transform: scale(1.2);
+                  }
+               }
+            }
 
-            background: linear-gradient(262.07deg, #573608 14.64%, #88601f 40.26%, #8d501d 62%, #683f05 93.82%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
+            .close {
+               display: flex;
+               align-items: center;
+               border: none;
+               background-color: transparent;
+               border: none;
+               font-family: "Leiko";
+               font-weight: 400;
+               font-size: 36px;
+               line-height: 67.5%;
+               text-transform: capitalize;
+               background: linear-gradient(262.07deg, #573608 14.64%, #88601f 40.26%, #8d501d 62%, #683f05 93.82%);
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+               cursor: pointer;
+               margin-top: 40px;
+               img {
+                  background-color: #000;
+                  margin-left: 10px;
+               }
+            }
          }
-         p {
+
+         .our__menu_btn {
+            float: right;
+            padding-bottom: 148px;
+            transform: translateX(-100px);
+            background-color: transparent;
+            border: none;
             font-family: "Leiko";
             font-weight: 400;
             font-size: 36px;
             line-height: 67.5%;
-            margin-top: 30px;
-            color: #664224;
+            text-transform: capitalize;
+            color: #f8e4be;
             cursor: pointer;
-            transition: 0.3s;
-            &:hover {
-               color: #743006;
-               transform: scale(1.2);
-            }
          }
       }
-
-      .close {
-         display: flex;
-         align-items: center;
-         border: none;
-         background-color: transparent;
-         border: none;
-         font-family: "Leiko";
-         font-weight: 400;
-         font-size: 36px;
-         line-height: 67.5%;
-         text-transform: capitalize;
-         background: linear-gradient(262.07deg, #573608 14.64%, #88601f 40.26%, #8d501d 62%, #683f05 93.82%);
-         -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
-         cursor: pointer;
-         margin-top: 40px;
-         img {
-            background-color: #000;
-            margin-left: 10px;
-         }
-      }
-   }
-
-   .our__menu_btn {
-      float: right;
-      transform: translateX(-100px);
-      background-color: transparent;
-      border: none;
-      font-family: "Leiko";
-      font-weight: 400;
-      font-size: 36px;
-      line-height: 67.5%;
-      text-transform: capitalize;
-      color: #f8e4be;
-      cursor: pointer;
    }
 }
