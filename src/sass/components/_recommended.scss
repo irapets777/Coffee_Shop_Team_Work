@@ -1,42 +1,51 @@
 .recommended {
    max-width: 100%;
    &__container {
-      padding: 0 133px;
+      width: 80%;
+      margin: 0 auto;
       .recommended__title {
-         padding-bottom: 64px;
-         font-family: $var7;
-         font-weight: 700;
-         font-size: 64px;
-         line-height: 77px;
-         text-transform: capitalize;
-         text-align: center;
-         background: linear-gradient(262.07deg, #f8e4be 14.64%, #fff3e0 40.26%, #fff8e8 62%, #dfc39d 93.82%);
-         -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
-         background-clip: text;
-         text-fill-color: transparent;
-         text-shadow: 185px 140px 65px rgba(0, 0, 0, 0.01), 118px 90px 59px rgba(0, 0, 0, 0.12),
-            67px 51px 50px rgba(0, 0, 0, 0.39), 30px 22px 37px rgba(0, 0, 0, 0.67), 7px 6px 20px rgba(0, 0, 0, 0.77);
+         h2 {
+            padding-bottom: 64px;
+            font-family: $var7;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 77px;
+            text-transform: capitalize;
+            text-align: center;
+            background: linear-gradient(262.07deg, #f8e4be 14.64%, #fff3e0 40.26%, #fff8e8 62%, #dfc39d 93.82%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            text-shadow: 185px 140px 65px rgba(0, 0, 0, 0.01), 118px 90px 59px rgba(0, 0, 0, 0.12),
+               67px 51px 50px rgba(0, 0, 0, 0.39), 30px 22px 37px rgba(0, 0, 0, 0.67), 7px 6px 20px rgba(0, 0, 0, 0.77);
+            @media screen and (max-width: 600px) {
+               font-size: 54px;
+               padding-bottom: 24px;
+            }
+            @media screen and (max-width: 480px) {
+               font-size: 44px;
+            }
+         }
       }
       .recommended__slider {
          display: flex;
          justify-content: center;
 
-         .swiper-button-next2,
          .swiper-button-prev2 {
-            width: calc(var(--swiper-navigation-size) / 2 * 4);
-            height: var(--swiper-navigation-size);
-            margin-top: calc(220px - (var(--swiper-navigation-size) / 4));
-            z-index: 10;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--swiper-navigation-color, var(--swiper-theme-color));
-         }
-         .swiper-button-prev2 {
-            left: var(--swiper-navigation-sides-offset, 42%);
+            left: var(--swiper-navigation-sides-offset, 44%);
+            top: var(--swiper-navigation-sides-offset, 94%);
             right: auto;
+            @media screen and (max-width: 1200px) {
+               left: var(--swiper-navigation-sides-offset, 42%);
+            }
+            @media screen and (max-width: 768px) {
+               left: var(--swiper-navigation-sides-offset, 38%);
+            }
+            @media screen and (max-width: 600px) {
+               left: var(--swiper-navigation-sides-offset, 32%);
+               top: var(--swiper-navigation-sides-offset, 90%);
+            }
             &::after {
                display: none;
             }
@@ -57,8 +66,19 @@
          }
 
          .swiper-button-next2 {
-            right: var(--swiper-navigation-sides-offset, 42%);
+            right: var(--swiper-navigation-sides-offset, 44%);
+            top: var(--swiper-navigation-sides-offset, 94%);
             left: auto;
+            @media screen and (max-width: 1200px) {
+               right: var(--swiper-navigation-sides-offset, 42%);
+            }
+            @media screen and (max-width: 768px) {
+               right: var(--swiper-navigation-sides-offset, 38%);
+            }
+            @media screen and (max-width: 600px) {
+               right: var(--swiper-navigation-sides-offset, 32%);
+               top: var(--swiper-navigation-sides-offset, 90%);
+            }
             &::after {
                display: none;
             }
@@ -79,11 +99,10 @@
 
          .slider-content {
             display: flex;
-            gap: 40px;
             padding-bottom: 105px;
             .recommended__card,
             .swiper-slide2 {
-               max-width: 362px;
+               max-width: 100%;
 
                .recommended__card-main {
                   background: rgba(173, 113, 74, 0.35);
@@ -116,10 +135,15 @@
                      left: 20px;
                   }
                   .recommended__card-img {
-                     // transition: 0.3s ease-in-out;
-                     // &:hover {
-                     //    transform: scale(1.2);
-                     // }
+                     @media screen and (max-width: 600px) {
+                        display: flex;
+                     }
+                     img {
+                        max-width: 100%;
+                        @media screen and (max-width: 600px) {
+                           margin: 0 auto;
+                        }
+                     }
                   }
                   .recommended__bucket {
                      display: flex;
@@ -158,6 +182,9 @@
                            rgba(109, 84, 74, 0) 114.55%
                         )
                         0 50%;
+                     @media screen and (max-width: 756px) {
+                        font-size: 12px;
+                     }
                   }
 
                   p {
@@ -168,6 +195,9 @@
                      color: #ffffff;
                      padding-left: 12px;
                      padding-top: 2px;
+                     @media screen and (max-width: 756px) {
+                        font-size: 12px;
+                     }
                   }
                }
             }

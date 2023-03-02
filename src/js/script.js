@@ -71,27 +71,49 @@ function ourStorySecond() {
 // Slider Recomended //
 var swiper = new Swiper(".recommended__slider", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 40,
   centeredSlides: true,
   loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 1500,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 80,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
 });
+
 // ================================================================= //
 /**Our Blog slider */
 var swiper = new Swiper(".container__blog-slider", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 0,
   centeredSlides: false,
   loop: false,
   navigation: {
     nextEl: ".swiper-button-next4",
     prevEl: ".swiper-button-prev4",
   },
-
 });
 
 // One Blog //
