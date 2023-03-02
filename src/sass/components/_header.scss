@@ -84,6 +84,101 @@
             }
         }
 
+        .header__burger {
+            .menu__btn {
+                cursor: pointer;
+                display: none;
+                @media screen and (max-width:992px){
+                    display: block;
+                    position: fixed;
+                    top: 15px;
+                    right: 10px;
+                    z-index: 100;
+                    width: 15%;
+                    height: 10%;
+                }
+
+                &.active span {
+                    background-color: transparent;
+
+                    &::before {
+                        transform: translateY(10px) rotate(45deg);
+                        transition: all 0.3s ease 0s;
+                    }
+
+                    &::after {
+                        transform: translateY(-10px) rotate(-45deg);
+                        transition: all 0.3s ease 0s;
+                    }
+                }
+
+                span{
+                    top: 40%;
+                    right: 10%;
+                    transform: translate(-50%, -50%);
+                }
+
+                span,
+                span::before,
+                span::after {
+                    position: absolute;
+                    width: 40px;
+                    height: 2px;
+                    background-color: $var3;
+                }
+
+                span::before {
+                    content: '';
+                    top: -10px;
+                }
+    
+                span::after {
+                    content: '';
+                    top: 10px;
+                }
+            }
+
+            .burger__menu{
+                display: none;
+                &.open {
+                    display: block;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 90;
+                    background: linear-gradient(93.99deg,
+                    rgba(223, 195, 157, 0.4) -9.94%,
+                    rgba(248, 228, 190, 0.4) 19.83%,
+                    rgba(223, 195, 157, 0.4) 50.71%,
+                    rgba(248, 228, 190, 0.4) 81.26%,
+                    rgba(248, 228, 190, 0.4) 111.66%);
+                    filter: blur(2);
+                    width: 40%;
+                    height: 100vh;
+                }
+
+                .menu__mob{
+                    margin-top: 70px;
+                    ul{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        li{
+                            margin: 20px 0;
+                            a{
+                                color: $var1;
+                                cursor: pointer;
+                                font-family: $var6;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
 
     }
 
