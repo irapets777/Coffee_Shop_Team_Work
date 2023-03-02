@@ -1,7 +1,5 @@
 .our__blog {
-    // width: 100vw;
     background-color: #53362a;
-    background-image: url("../img/our_blog/Bg-Of-blog1.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,6 +50,7 @@
             align-items: center;
             justify-content: center;
             color: $var4;
+            padding-top: 28px;
         }
         .swiper-button-next4.swiper-button-disabled,
         .swiper-button-prev4.swiper-button-disabled {
@@ -62,33 +61,41 @@
             .slider__item {
                 background-color: #997d6c;
                 backdrop-filter: blur(2px);
-                width: 534px !important;
+                // max-width: 534px !important;
                 border-radius: 35px;
                 padding: 20px 50px 40px;
                 margin-left: 30px;
                 margin-bottom: 93px;
+                @media screen and (max-width: 600px) {
+                    // width: 100% !important;
+                    padding: 20px 20px 40px;
+                    margin-left: 0px;
+                }
                 .item__title {
                     h3 {
-                        font-family: "Leiko";
-                        font-weight: 400;
+                        font-family: $var6;
                         font-size: 24px;
                         line-height: 218.5%;
                         text-transform: capitalize;
                         color: #ffffff;
                         margin-bottom: 19px;
-                        white-space: nowrap;
+                        @media screen and (max-width: 992px) {
+                            font-size: 22px;
+                        }
                     }
                 }
 
                 .item__describe {
-                    width: 434px;
                     p {
-                        font-family: "Leiko";
+                        font-family: $var6;
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 227%;
                         text-transform: capitalize;
                         color: #f7e5da;
+                        @media screen and (max-width: 992px) {
+                            font-size: 12px;
+                        }
                     }
                 }
 
@@ -107,10 +114,12 @@
                     margin-top: 20px;
                     img {
                         margin-right: 7px;
+                        width: 17px;
+                        height: 17px;
                     }
                     p {
                         margin-right: 7px;
-                        font-family: "Leiko";
+                        font-family: $var6;
                         font-weight: 400;
                         font-size: 8.92941px;
                         line-height: 218.5%;
@@ -123,7 +132,7 @@
                     margin-left: 45px;
                     display: flex;
                     p {
-                        font-family: "Leiko";
+                        font-family: $var6;
                         font-weight: 400;
                         font-size: 12.76px;
                         line-height: 218.5%;
