@@ -107,9 +107,36 @@ var swiper = new Swiper(".recommended__slider", {
 /**Our Blog slider */
 var swiper = new Swiper(".container__blog-slider", {
   slidesPerView: 3,
-  spaceBetween: 0,
+  spaceBetween: 40,
   centeredSlides: false,
   loop: false,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 80,
+      centeredSlides: false,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1000: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1300: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
   navigation: {
     nextEl: ".swiper-button-next4",
     prevEl: ".swiper-button-prev4",
