@@ -1,4 +1,5 @@
 .footer {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -8,6 +9,8 @@
     background-repeat: no-repeat, no-repeat;
     background-position: left, center;
     min-height: 437px;
+    width: 100%;
+    background-color: #4b2207;
     .footer__social {
         grid-area: 1 / 9 / 2 / 11;
         display: flex;
@@ -16,12 +19,15 @@
         font-size: 16px;
         color: $var5;
         text-transform: capitalize;
-        transform: translateY(-0px);
+        transform: translateY(-60px);
     }
 
     .footer__about {
         grid-area: 2 / 3 / 5 / 5;
         margin-left: 40px;
+        @media screen and (max-width:992px){
+            grid-area: 2 / 2 / 4 / 4;
+        }
         h3 {
             @include footer-title;
         }
@@ -38,6 +44,9 @@
 
     .footer__customer {
         grid-area: 2 / 5 / 5 / 7;
+        @media screen and (max-width:992px){
+            grid-area: 2 / 4 / 4 / 4;
+        }
         h3 {
             @include footer-title;
         }
@@ -54,6 +63,9 @@
 
     .footer__services {
         grid-area: 2 / 7 / 5 / 9;
+        @media screen and (max-width:992px){
+            grid-area: 2 / 6 / 5 / 9;
+        }
         h3 {
             @include footer-title;
         }
@@ -70,6 +82,9 @@
 
     .footer__contacts {
         grid-area: 2 / 9 / 5 / 11;
+        @media screen and (max-width:992px){
+            grid-area: 2 / 8 / 5 / 11;
+        }
         ul {
             li {
                 padding: 20px 0;
