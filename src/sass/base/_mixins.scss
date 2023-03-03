@@ -1,0 +1,23 @@
+@mixin footer-title {
+    font-size: 20px;
+    white-space: nowrap;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #fff3e0;
+    padding: 14px 0;
+}
+
+@mixin footer-link{
+    display: inline-block;
+    transition: 0.3s;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #fff3e0;
+    
+    &:hover {
+        color: rgba(247, 225, 188, 0.3);
+        transform: scale(1.3);
+    }
+}

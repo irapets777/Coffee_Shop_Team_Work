@@ -2,28 +2,67 @@
    max-width: 100%;
    display: flex;
    justify-content: center;
+   background-repeat: no-repeat;
+   background-position: 0% 100%;
    &__container {
-      margin: 0 auto;
+      margin: 0 20px;
       padding: 6px;
       max-width: 1200px;
       border-radius: 35px;
       border-top: 3px solid rgba(84, 54, 42, 1);
       border-right: 3px solid rgba(84, 54, 42, 1);
       margin-bottom: 163px;
+      .second__offer-title {
+         font-family: $var7;
+         font-weight: 700;
+         font-size: 56px;
+         text-transform: capitalize;
+         color: $var4;
+         line-height: 0;
+         text-shadow: 0px 69px 19px rgba(32, 19, 22, 0.01), 0px 44px 18px rgba(32, 19, 22, 0.09),
+            0px 25px 15px rgba(32, 19, 22, 0.31), 0px 11px 11px rgba(32, 19, 22, 0.52),
+            0px 3px 6px rgba(32, 19, 22, 0.6), 0px 0px 0px rgba(32, 19, 22, 0.62);
+         display: none;
+         @media screen and (max-width: 500px) {
+            display: block;
+            position: relative;
+            z-index: 2;
+            margin-left: 30px;
+            transform: translateY(-10px);
+         }
+         @media screen and (max-width: 380px) {
+            font-size: 46px;
+         }
+      }
       .offer__item {
+         padding: 0 20px;
          display: flex;
          justify-content: center;
          background: rgba(173, 113, 74, 0.35);
          backdrop-filter: blur(2px);
          border-radius: 35px;
-         background-image: url("../img/offer-img/offer-gradient1.png"), url("../img/offer-img/offer-gradient2.png");
-         background-position-x: left;
+         background-position: 45% 0%, 0% 0%;
          background-repeat: no-repeat;
+         @media screen and (max-width: 1120px) {
+            align-items: center;
+         }
+         @media screen and (max-width: 992px) {
+            align-items: center;
+            flex-direction: column-reverse;
+         }
          .offer__title {
             padding-right: 91px;
             padding-left: 61px;
             padding-top: 35px;
-            //Подумати над нижнім падінгом !!!!!!
+            @media screen and (max-width: 992px) {
+               padding-top: 0px;
+            }
+            @media screen and (max-width: 576px) {
+               padding: 0 20px;
+            }
+            @media screen and (max-width: 460px) {
+               padding: 0 10px;
+            }
             h2 {
                font-family: $var7;
                font-weight: 700;
@@ -35,19 +74,32 @@
                   0px 25px 15px rgba(32, 19, 22, 0.31), 0px 11px 11px rgba(32, 19, 22, 0.52),
                   0px 3px 6px rgba(32, 19, 22, 0.6), 0px 0px 0px rgba(32, 19, 22, 0.62);
                transform: translateY(-40px);
+               @media screen and (max-width: 992px) {
+                  transform: translateY(-385px);
+               }
+               @media screen and (max-width: 500px) {
+                  display: none;
+               }
             }
+
             h3 {
                font-family: $var6;
                font-size: 32px;
                line-height: 218.5%;
                text-transform: capitalize;
                color: $var4;
+               @media screen and (max-width: 576px) {
+                  font-size: 26px;
+               }
                .offer__sale {
                   font-family: $var6;
                   font-size: 48px;
                   line-height: 218.5%;
                   text-transform: capitalize;
                   color: $var4;
+                  @media screen and (max-width: 576px) {
+                     font-size: 38px;
+                  }
                }
             }
             p {
@@ -57,8 +109,12 @@
                text-transform: capitalize;
                color: #ffffff;
                max-width: 619px;
-               // height: 20vh;
-               // height: 142px;
+               @media screen and (max-width: 576px) {
+                  font-size: 16px;
+               }
+               @media screen and (max-width: 460px) {
+                  font-size: 14px;
+               }
                #more-offer {
                   display: none;
                }
@@ -73,6 +129,7 @@
             }
             .background-btn {
                padding-top: 32px;
+               padding-bottom: 52px;
                a {
                   font-family: $var6;
                   font-weight: 400;
@@ -88,6 +145,10 @@
                   border-left: 2px solid rgba(255, 243, 224, 1);
                   border-top: 2px solid rgba(224, 168, 114, 1);
                   transition: 0.3s;
+                  @media screen and (max-width: 576px) {
+                     padding: 6px 22px;
+                     font-size: 20px;
+                  }
                   &:hover {
                      background: rgba(247, 225, 188, 0.3);
                   }
@@ -98,6 +159,9 @@
       .offer__image {
          img {
             transition: 0.3s;
+            @media screen and (max-width: 576px) {
+               max-width: 100%;
+            }
             &:hover {
                cursor: pointer;
                transform: scale(1.05);

@@ -1,10 +1,11 @@
-<section class="menu">
+<section class="menu"
+   style="background-image: url(./img/menu-img/left-big-bean-bg.svg), url(./img/menu-img/left-small-bean-bg.svg), url(./img/menu-img/right-small-bean-bg.svg), url(./img/menu-img/right-big-bean-bg.svg);">
    <div class="menu__container">
       <div class="menu__title">
          <h2>popular menu</h2>
       </div>
-      <div class="menu__main" style="background-image: url('../img/menu-img/main-menu-img.png');">
-         <!-- <div class="menu__gradient"></div> -->
+      <div class="menu__main" style="background-image: url('./img/menu-img/main-menu-img.png');">
+         <div class="menu__gradient"></div>
          <div class="div">
             <div class="first__line-menu">
                <ul>
@@ -101,30 +102,47 @@
                   </div>
                </ul>
             </div>
+            <div id="myModal" class="modal">
+               <div class="modal-content" style="background-image: url(./img/menu-img/menu-letter.png);">
+                  <h2>Our Menu</h2>
+                  <div class="menu__map">
+                     <div class="menu__drink">
+                        <h3>COFFEE</h3>
+                        <p>FRAPPÉ</p>
+                        <p>FREAKSHAKE</p>
+                        <p>ICED MOCHA</p>
+                        <p>ICED LATTE</p>
+                        <p>FLAT WHITE</p>
+                        <p>AFFOGATO</p>
+                        <p>IRISH COFFEE</p>
+                        <p>RISTRETTO</p>
+                        <p>ESPRESSO CON PANNA</p>
+                     </div>
+                     <div class="menu__food">
+                        <h3>DESSERTS</h3>
+                        <p>CUPCAKE</p>
+                        <p>DONUTS</p>
+                        <p>PANCAKES</p>
+                        <p>CHEESECAKE</p>
+                        <p>TOFFEE CAKE</p>
+                        <p>CROISSANTS</p>
+                        <p>VANILLA COBBLER</p>
+                        <p>STRAWBERRY PIE</p>
+                        <p>PIE SALT CARAMEL</p>
+                     </div>
+                  </div>
+                  <button class="close">
+                     Close
+                     <img src="./img/menu-img/our-menu-close.svg" alt="img">
+                  </button>
+               </div>
+            </div>
+
+            <button class="our__menu_btn" id="openModal">
+               Our Menu
+               <img src="./img/menu-img/our-menu-btn.svg" alt="img">
+            </button>
          </div>
       </div>
    </div>
-   <div id="myModal" class="modal">
-      <div class="modal-content">
-         <h2>Our Menu</h2>
-         <p>FRAPPÉ</p>
-         <p>FREAKSHAKE</p>
-         <p>ICED MOCHA</p>
-         <p>ICED LATTE</p>
-         <p>FLAT WHITE</p>
-         <p>ESPRESSO CON PANNA</p>
-         <p>AFFOGATO</p>
-         <p>IRISH COFFEE</p>
-         <p>RISTRETTO</p>
-         <button class="close">
-            Close
-            <img src="./img/menu-img/our-menu-close.svg" alt="img">
-         </button>
-      </div>
-   </div>
-
-   <button class="our__menu_btn" id="openModal">
-      Our Menu
-      <img src="./img/menu-img/our-menu-btn.svg" alt="img">
-   </button>
 </section>

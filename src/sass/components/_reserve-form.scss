@@ -1,7 +1,8 @@
 .reserve-form {
    max-width: 100%;
+   background-repeat: no-repeat;
+   background-position: right 80%;
    &__container {
-      height: 640px;
       margin-bottom: 148px;
       h2 {
          font-family: $var7;
@@ -9,22 +10,22 @@
          font-size: 64px;
          line-height: 77px;
          text-align: center;
-         background: linear-gradient(250.73deg, #e0a872 13.76%, #f8e4be 49.91%, #fff3e0 58.47%, #e0a872 95.09%);
-         -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
+         color: $var4;
+         text-shadow: 0px 69px 19px rgba(32, 19, 22, 0.01), 0px 44px 18px rgba(32, 19, 22, 0.09),
+            0px 25px 15px rgba(32, 19, 22, 0.31), 0px 11px 11px rgba(32, 19, 22, 0.52),
+            0px 3px 6px rgba(32, 19, 22, 0.6), 0px 0px 0px rgba(32, 19, 22, 0.62);
          position: relative;
          z-index: 5;
          transform: translateY(20px);
-         text-shadow: 185px 140px 65px rgba(0, 0, 0, 0.01), 118px 90px 59px rgba(0, 0, 0, 0.12),
-            67px 51px 50px rgba(0, 0, 0, 0.39), 30px 22px 37px rgba(0, 0, 0, 0.67), 7px 6px 20px rgba(0, 0, 0, 0.77);
+         @media screen and (max-width: 480px) {
+            font-size: 48px;
+            transform: translateY(24px);
+         }
       }
       .reserve__item-container {
-         height: 581px;
          width: 100%;
          background: rgba(173, 113, 74, 0.35);
          backdrop-filter: blur(2px);
-         background-image: url("../img/reserve-img/reserve-gradient1.png"),
-            url("../img/reserve-img/reserve-gradient2.png");
          background-position-x: left;
          background-repeat: no-repeat;
       }
@@ -32,20 +33,31 @@
          max-width: 1440px;
          margin: 0 auto;
          display: flex;
-         align-items: center;
-         justify-content: space-between;
+         background-repeat: no-repeat;
+         background-position: 10% 40%;
+         @media screen and (max-width: 1060px) {
+            background-position: 3% 40%;
+         }
+         @media screen and (max-width: 992px) {
+            background-position: center;
+         }
+
          .reserve-image {
-            img {
-               padding-bottom: 54px;
-               padding-left: 115px;
-               padding-right: 226px;
+            width: 100%;
+            @media screen and (max-width: 992px) {
+               width: 0;
             }
          }
          .reserve__form {
-            width: 540px;
-            padding-right: 129px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0 15px;
             form {
-               width: 100%;
+               width: 540px;
+               padding-top: 86px;
+               padding-bottom: 86px;
+
                .form__date {
                   padding-bottom: 34px;
                   input[type="date"] {
@@ -59,6 +71,9 @@
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                     @media screen and (max-width: 480px) {
+                        font-size: 18px;
+                     }
                   }
                   input[type="date"]::-webkit-calendar-picker-indicator {
                      background-color: #fff;
@@ -74,6 +89,7 @@
                   display: flex;
                   justify-content: space-between;
                   padding-bottom: 34px;
+
                   input[type="time"] {
                      width: 100%;
                      height: 54px;
@@ -86,6 +102,10 @@
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                     @media screen and (max-width: 480px) {
+                        font-size: 18px;
+                        margin-right: 22px;
+                     }
                   }
                   input[type="time"]::-webkit-calendar-picker-indicator {
                      background-color: #fff;
@@ -113,6 +133,13 @@
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                     @media screen and (max-width: 480px) {
+                        font-size: 18px;
+                        padding-left: 36px;
+                     }
+                     @media screen and (max-width: 360px) {
+                        font-size: 14px;
+                     }
                   }
                }
                .form__name {
@@ -130,12 +157,18 @@
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                     @media screen and (max-width: 480px) {
+                        font-size: 18px;
+                     }
                   }
                   input[type="text"]::placeholder {
                      font-family: $var6;
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                     @media screen and (max-width: 480px) {
+                        font-size: 18px;
+                     }
                   }
                }
                .form__phone {
@@ -156,32 +189,42 @@
                      &:focus-visible {
                         outline: -webkit-focus-ring-color auto 0px;
                      }
+                     @media screen and (max-width: 480px) {
+                        font-size: 18px;
+                     }
                   }
                   input[type="tel"]::placeholder {
                      font-family: $var6;
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                     @media screen and (max-width: 480px) {
+                        font-size: 18px;
+                     }
                   }
 
                   input:invalid {
-                     // content: "✖";
                      color: #9d8781;
                      border: 4px solid #8b0000;
                   }
 
                   input:valid {
-                     // content: "✓";
                      color: #9d8781;
                      border: 4px solid #009000;
                   }
                   .form__tel {
                      color: $var4;
                      margin-left: 52px;
+                     @media screen and (max-width: 992px) {
+                        background: $var2;
+                     }
                   }
                }
                .form__mail-submit {
                   display: flex;
+                  @media screen and (max-width: 480px) {
+                     display: block;
+                  }
                   input[type="email"] {
                      width: 100%;
                      height: 54px;
@@ -196,12 +239,20 @@
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                     @media screen and (max-width: 480px) {
+                        font-size: 18px;
+                        margin-bottom: 34px;
+                        margin-right: 0px;
+                     }
                   }
                   input[type="email"]::placeholder {
                      font-family: $var6;
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                     @media screen and (max-width: 480px) {
+                        font-size: 18px;
+                     }
                   }
                   .reserve__btn {
                      font-family: $var6;
@@ -219,6 +270,9 @@
                      transition: 0.3s;
                      &:hover {
                         background: rgba(247, 225, 188, 0.3);
+                     }
+                     @media screen and (max-width: 480px) {
+                        float: right;
                      }
                   }
                }
