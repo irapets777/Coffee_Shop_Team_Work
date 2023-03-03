@@ -3,14 +3,13 @@
     width: 100%;
     background: rgba(173, 113, 74, 0.35);
     backdrop-filter: blur(2px);
-    margin-bottom: 204px;
     background-repeat: no-repeat;
-    background-position: left -18.5%, 90% 90%, right 120%, left 0%;
+    background-position: left -18.5%, 70% 70%, left 0%;
     @media screen and (max-width: 992px) {
-        background-position: -4% -15%, 80% 90%, right 120%, left 0%;
+        background-position: 0% -19%, 70% 70%, left 0%;
     }
     @media screen and (max-width: 501px) {
-        background-position: -4% -15%, 60% 90%, right 120%, left 0%;
+        background-position: -4% -16%, 70% 70%, left 0%;
     }
 
     &__container {
@@ -26,8 +25,6 @@
 
             label {
                 font-family: $var6;
-                font-style: normal;
-                font-weight: 400;
                 font-size: 21px;
                 line-height: 2.7;
                 text-transform: capitalize;
@@ -35,13 +32,17 @@
                 color: #f8e4be;
                 margin-bottom: 54px;
                 margin-top: 54px;
+                @media screen and (max-width: 600px) {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
                 @media screen and (max-width: 500px) {
                     font-size: 18px;
                     line-height: 1.7;
                 }
                 @media screen and (max-width: 430px) {
                     font-size: 16px;
-                    line-height: 1.2;
+                    line-height: 1.4;
                 }
             }
 

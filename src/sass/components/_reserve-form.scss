@@ -53,6 +53,9 @@
             display: flex;
             justify-content: center;
             padding: 0 15px;
+            @media screen and (max-width: 992px) {
+               background-color: #54372bb7;
+            }
             form {
                width: 540px;
                padding-top: 86px;
