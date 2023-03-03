@@ -1,8 +1,20 @@
 .review {
-   display: flex;
-   justify-content: center;
+   background-repeat: no-repeat;
+   background-position: left 10%, 12% -5%, left 112%;
+   @media screen and (max-width: 1060px) {
+      background-position: left 10%, 22% -5%, left 112%;
+   }
+   @media screen and (max-width: 756px) {
+      background-position: left 10%, 32% -5%, left 112%;
+   }
+   @media screen and (max-width: 576px) {
+      background-position: left 10%, 54% -5%, 0% 112%;
+   }
+   @media screen and (max-width: 501px) {
+      background-position: left 10%, 54% -5%, -4% 113.5%;
+   }
    &__container {
-      padding: 184px 133px;
+      padding: 241px 10px 142px;
       .review__title {
          h2 {
             font-family: $var7;
@@ -10,20 +22,26 @@
             font-size: 64px;
             line-height: 77px;
             transform: translateY(-50px);
-            /* identical to box height */
             height: 0;
             color: $var4;
             position: relative;
             z-index: 20;
             text-align: center;
             text-transform: capitalize;
+            @media screen and (max-width: 650px) {
+               font-size: 48px;
+            }
+            @media screen and (max-width: 380px) {
+               font-size: 36px;
+            }
          }
       }
       .review__border {
+         margin: 0 auto;
          border-radius: 35px;
          border-left: 3px solid rgba(84, 54, 42, 1);
          border-bottom: 3px solid rgba(84, 54, 42, 1);
-         width: 100%;
+         max-width: 1200px;
          height: 100%;
          padding: 6px;
          display: flex;
@@ -48,6 +66,9 @@
                   align-self: flex-end;
                   flex-direction: column;
                   cursor: pointer;
+                  @media screen and (max-width: 1000px) {
+                     width: 320px;
+                  }
                   &:hover {
                      background: rgba(116, 71, 47, 0.75);
                   }
@@ -72,7 +93,7 @@
                      max-width: 62px;
                      p {
                         text-align: center;
-                        font-family: "Leiko";
+                        font-family: $var6;
                         font-size: 16px;
                         line-height: 150.5%;
                         letter-spacing: 0.035em;

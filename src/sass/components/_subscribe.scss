@@ -1,80 +1,85 @@
-.subscribe-newsletter {
-    font-family: 'Leiko';
+.subscribe {
+    font-family: $var6;
     width: 100%;
     background: rgba(173, 113, 74, 0.35);
     backdrop-filter: blur(2px);
     margin-bottom: 204px;
+    background-repeat: no-repeat;
+    background-position: left -18.5%, 90% 90%, right 120%, left 0%;
+    @media screen and (max-width: 992px) {
+        background-position: -4% -15%, 80% 90%, right 120%, left 0%;
+    }
+    @media screen and (max-width: 501px) {
+        background-position: -4% -15%, 60% 90%, right 120%, left 0%;
+    }
 
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 540px;
-        width: 100%;
         margin: 0 auto;
 
-        &_mail {
+        .container__mail {
             display: flex;
             flex-direction: column;
             align-items: center;
 
             label {
-                font-family: 'Leiko';
+                font-family: $var6;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 21px;
                 line-height: 2.7;
                 text-transform: capitalize;
                 text-align: center;
-                color: #F8E4BE;
+                color: #f8e4be;
                 margin-bottom: 54px;
                 margin-top: 54px;
-                @media screen and (max-width: 500px){ 
+                @media screen and (max-width: 500px) {
                     font-size: 18px;
                     line-height: 1.7;
                 }
-                @media screen and (max-width:430px){
+                @media screen and (max-width: 430px) {
                     font-size: 16px;
                     line-height: 1.2;
                 }
             }
 
-            .your_addres {
-                border: 1px solid #D6D6D6;
+            input[type="email"] {
+                border: 1px solid #d6d6d6;
                 border-radius: 12px;
-                background-color: #FFFFFF;
+                background-color: #ffffff;
                 padding: 13.5px 0px 13.5px 48px;
                 margin-bottom: 54px;
                 width: 100%;
-                @media screen and (max-width:430px) {
+                background-repeat: no-repeat;
+                background-position: 2%;
+                color: #9d8781;
+                @media screen and (max-width: 620px) {
                     width: 76%;
                 }
             }
 
-            .btn {
+            .subscribe__btn {
                 align-items: center;
                 padding: 12px 36px;
-                gap: 10px;
-                font-style: normal;
-                font-weight: 400;
                 font-size: 24px;
-                line-height: 1.7;
                 text-transform: capitalize;
                 background: rgba(247, 225, 188, 0.1);
-                color: #F8E4BE;
+                color: #f8e4be;
                 border-radius: 49px;
-                border: 2px solid #F8E4BE;
+                border: 2px solid #f8e4be;
                 border-right: 2px solid rgba(224, 168, 114, 1);
                 border-bottom: 2px solid rgba(248, 228, 190, 1);
                 border-left: 2px solid rgba(255, 243, 224, 1);
                 border-top: 2px solid rgba(224, 168, 114, 1);
                 transition: 0.3s;
                 margin-bottom: 54px;
-                @media screen and (max-width: 500px){ 
+                @media screen and (max-width: 500px) {
                     font-size: 18px;
                 }
-                @media screen and (max-width:430px){
-                    font-size: 16px;                    
+                @media screen and (max-width: 430px) {
+                    font-size: 16px;
                 }
 
                 &:hover {

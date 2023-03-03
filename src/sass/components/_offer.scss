@@ -12,6 +12,28 @@
       border-top: 3px solid rgba(84, 54, 42, 1);
       border-right: 3px solid rgba(84, 54, 42, 1);
       margin-bottom: 163px;
+      .second__offer-title {
+         font-family: $var7;
+         font-weight: 700;
+         font-size: 56px;
+         text-transform: capitalize;
+         color: $var4;
+         line-height: 0;
+         text-shadow: 0px 69px 19px rgba(32, 19, 22, 0.01), 0px 44px 18px rgba(32, 19, 22, 0.09),
+            0px 25px 15px rgba(32, 19, 22, 0.31), 0px 11px 11px rgba(32, 19, 22, 0.52),
+            0px 3px 6px rgba(32, 19, 22, 0.6), 0px 0px 0px rgba(32, 19, 22, 0.62);
+         display: none;
+         @media screen and (max-width: 500px) {
+            display: block;
+            position: relative;
+            z-index: 2;
+            margin-left: 30px;
+            transform: translateY(-10px);
+         }
+         @media screen and (max-width: 380px) {
+            font-size: 46px;
+         }
+      }
       .offer__item {
          padding: 0 20px;
          display: flex;
@@ -55,7 +77,11 @@
                @media screen and (max-width: 992px) {
                   transform: translateY(-385px);
                }
+               @media screen and (max-width: 500px) {
+                  display: none;
+               }
             }
+
             h3 {
                font-family: $var6;
                font-size: 32px;
