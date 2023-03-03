@@ -1,13 +1,19 @@
 .hero {
    width: 100%;
    margin: 0 auto;
-   background-image: url("../img/hero-img/coffee-hero-items-beans.png");
-   background-size: cover;
    background-repeat: no-repeat;
-   background-position: 0px;
+   background-position: bottom right;
+   background-size: 1440px 1050px;
+   @media screen and (max-width: 1100px) {
+      background-position: right 100%;
+      background-size: contain;
+      background-attachment: fixed;
+   }
 
    &__container {
       display: flex;
+      position: relative;
+
       .container__blur-first {
          width: 450px;
          height: 450px;
@@ -17,6 +23,13 @@
          filter: blur(210px);
          position: absolute;
          z-index: 5;
+         @media screen and (max-width: 1100px) {
+            width: 45%;
+            height: 60%;
+            left: 0;
+            top: 0;
+            filter: blur(230px);
+         }
       }
       .container__blur-second {
          width: 1102px;
@@ -27,13 +40,33 @@
          background: #3f2f2a;
          filter: blur(210px);
          z-index: 10;
+         @media screen and (max-width: 1100px) {
+            width: 80%;
+            height: 70%;
+            left: 0;
+            top: 0;
+            filter: blur(170px);
+         }
+         @media screen and (max-width: 526px) {
+            width: 100%;
+            height: 70%;
+            left: 0;
+            top: 0;
+            filter: blur(170px);
+         }
       }
       .hero__main {
          z-index: 20;
-         padding-top: 256px;
+         padding-top: 244px;
          padding-left: 104px;
-         flex: 0 0 auto;
          width: 55%;
+         @media screen and (max-width: 1100px) {
+            width: 100%;
+            padding: 120px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
          h1 {
             font-family: "Dancing script";
             font-weight: 700;
@@ -46,6 +79,14 @@
             text-shadow: 185px 140px 65px rgba(0, 0, 0, 0.01), 118px 90px 59px rgba(0, 0, 0, 0.12),
                67px 51px 50px rgba(0, 0, 0, 0.39), 30px 22px 37px rgba(0, 0, 0, 0.67), 7px 6px 20px rgba(0, 0, 0, 0.77),
                0px 0px 0px rgba(0, 0, 0, 0.78);
+            @media screen and (max-width: 526px) {
+               font-size: 92px;
+               padding: 0 10px;
+            }
+            @media screen and (max-width: 392px) {
+               font-size: 72px;
+               font-weight: 500;
+            }
          }
          .hero__describe {
             max-width: 472px;
@@ -57,11 +98,25 @@
                font-size: 24px;
                line-height: 195%;
                color: #dabb9e;
+               @media screen and (max-width: 1100px) {
+                  text-align: center;
+               }
+               @media screen and (max-width: 526px) {
+                  font-size: 20px;
+                  padding: 0 10px;
+               }
             }
          }
 
          .hero__btn {
             margin-bottom: 155px;
+            @media screen and (max-width: 1100px) {
+               margin-bottom: 200px;
+            }
+            @media screen and (max-width: 526px) {
+               padding: 0 10px;
+               margin-bottom: 100px;
+            }
             :first-child {
                margin-right: 50px;
             }
@@ -82,6 +137,13 @@
                &:hover {
                   background: rgba(247, 225, 188, 0.3);
                }
+               @media screen and (max-width: 526px) {
+                  padding: 10px 20px;
+                  font-size: 20px;
+               }
+               @media screen and (max-width: 392px) {
+                  font-size: 16px;
+               }
             }
          }
          .hero__coffee-container {
@@ -93,8 +155,20 @@
             border-radius: 50px 50px 0 0;
             border-left: 3.77px solid rgba(84, 54, 42, 1);
             border-top: 3.77px solid rgba(84, 54, 42, 1);
-            background-image: url("../img/hero-img/hero-cup.png");
             background-repeat: no-repeat;
+            @media screen and (max-width: 1100px) {
+               width: -webkit-fill-available;
+               background: rgba(74, 39, 33, -0.15);
+               background-repeat: no-repeat;
+               margin-left: 0px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+            }
+            @media screen and (max-width: 680px) {
+               background-size: 0px 0px;
+            }
             h3 {
                font-family: $var7;
                background: linear-gradient(250.73deg, #e0a872 13.76%, #f8e4be 49.91%, #fff3e0 58.47%, #e0a872 95.09%);
@@ -106,6 +180,15 @@
                margin-top: 108px;
                margin-right: 22px;
                margin-bottom: 45px;
+               @media screen and (max-width: 1100px) {
+                  margin-right: 0px;
+                  text-align: center;
+                  font-size: 50px;
+                  margin-top: 56px;
+               }
+               @media screen and (max-width: 526px) {
+                  font-size: 42px;
+               }
             }
             a {
                font-family: $var6;
@@ -123,6 +206,17 @@
                border-left: 1px solid rgba(255, 243, 224, 1);
                border-top: 1px solid rgba(224, 168, 114, 1);
                transition: 0.3s;
+               @media screen and (max-width: 1100px) {
+                  margin-right: 0px;
+                  float: none;
+                  padding: 14px;
+                  font-size: 18px;
+                  display: inline-flex;
+               }
+               @media screen and (max-width: 526px) {
+                  padding: 12px;
+                  font-size: 14px;
+               }
                &:hover {
                   background: rgba(247, 225, 188, 0.3);
                }
@@ -133,11 +227,13 @@
          }
       }
       .hero__item {
-         flex: 0 0 auto;
          width: 45%;
          z-index: -10;
          background: radial-gradient(114.24% 73.21% at 98.55% 92.63%, #3a1b1a 0%, rgba(124, 87, 60, 0) 100%), #7c573c;
          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+         @media screen and (max-width: 1100px) {
+            display: none;
+         }
       }
    }
 }

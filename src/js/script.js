@@ -28,10 +28,6 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });
 // More Text in section OUR-STORY!!! //
 // One Story //
@@ -91,27 +87,76 @@ function ourStorySecond() {
 // Slider Recomended //
 var swiper = new Swiper(".recommended__slider", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 40,
   centeredSlides: true,
   loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 1500,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 80,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
 });
+
 // ================================================================= //
 /**Our Blog slider */
 var swiper = new Swiper(".container__blog-slider", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 40,
   centeredSlides: false,
   loop: false,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 80,
+      centeredSlides: false,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1000: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1300: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
   navigation: {
     nextEl: ".swiper-button-next4",
     prevEl: ".swiper-button-prev4",
   },
-
 });
 
 // One Blog //
@@ -200,6 +245,64 @@ var swiper = new Swiper(".review__slider-container", {
     depth: 100,
     modifier: 3,
     slideShadows: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 80,
+        depth: 300,
+        modifier: 5,
+        slideShadows: true,
+      },
+    },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 80,
+        depth: 200,
+        modifier: 2,
+        slideShadows: true,
+      },
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 130,
+        depth: 150,
+        modifier: 4,
+        slideShadows: true,
+      },
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 150,
+        depth: 100,
+        modifier: 3,
+        slideShadows: true,
+      },
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    1300: {
+      slidesPerView: 3,
+      spaceBetween: 60,
+    },
   },
   navigation: {
     nextEl: ".swiper-button-next3",
