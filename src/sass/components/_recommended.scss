@@ -12,13 +12,10 @@
             line-height: 77px;
             text-transform: capitalize;
             text-align: center;
-            background: linear-gradient(262.07deg, #f8e4be 14.64%, #fff3e0 40.26%, #fff8e8 62%, #dfc39d 93.82%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-            text-shadow: 185px 140px 65px rgba(0, 0, 0, 0.01), 118px 90px 59px rgba(0, 0, 0, 0.12),
-               67px 51px 50px rgba(0, 0, 0, 0.39), 30px 22px 37px rgba(0, 0, 0, 0.67), 7px 6px 20px rgba(0, 0, 0, 0.77);
+            color: $var4;
+            text-shadow: 0px 69px 19px rgba(32, 19, 22, 0.01), 0px 44px 18px rgba(32, 19, 22, 0.09),
+               0px 25px 15px rgba(32, 19, 22, 0.31), 0px 11px 11px rgba(32, 19, 22, 0.52),
+               0px 3px 6px rgba(32, 19, 22, 0.6), 0px 0px 0px rgba(32, 19, 22, 0.62);
             @media screen and (max-width: 600px) {
                font-size: 54px;
                padding-bottom: 24px;
