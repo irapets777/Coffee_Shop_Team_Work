@@ -6,14 +6,14 @@ let closeW = document.querySelector('#burger-menu');
 
 humb.addEventListener('click', humbHandler);
 function humbHandler(e) {
-   e.preventDefault();
-   humbBody.classList.toggle("open");
-   humb.classList.toggle('active');
-   humbLink.classList.toggle('active');
+  e.preventDefault();
+  humbBody.classList.toggle("open");
+  humb.classList.toggle('active');
+  humbLink.classList.toggle('active');
 }
 
 
-$('.burger__menu a').on('click', function(e){
+$('.burger__menu a').on('click', function (e) {
   $('.burger__menu').toggleClass('open');
   $('#burger-icon').toggleClass('active');
 })
@@ -79,8 +79,14 @@ function ourStorySecond() {
   }
 }
 // ================================================================= //
-// Table JS Code //
-
+// Form JS Code //
+// Validation Form-Phone //
+let element = document.getElementById('phone');
+let maskOptions = {
+  mask: '+38 (000) 00-00-00',
+  lazy: false,
+};
+let mask = IMask(element, maskOptions);
 
 
 // ================================================================= //
