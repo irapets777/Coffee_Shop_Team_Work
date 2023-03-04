@@ -175,7 +175,7 @@
                   }
                }
                .form__phone {
-                  padding-bottom: 22px;
+                  padding-bottom: 34px;
                   input[type="tel"] {
                      width: 100%;
                      height: 54px;
@@ -214,13 +214,6 @@
                   input:valid {
                      color: #9d8781;
                      border: 4px solid #009000;
-                  }
-                  .form__tel {
-                     color: $var4;
-                     margin-left: 52px;
-                     @media screen and (max-width: 992px) {
-                        background: $var2;
-                     }
                   }
                }
                .form__mail-submit {
