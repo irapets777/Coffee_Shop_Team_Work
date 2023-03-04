@@ -83,7 +83,7 @@ function ourStorySecond() {
 // Validation Form-Phone //
 let element = document.getElementById('phone');
 let maskOptions = {
-  mask: '+38 (000) 00-00-00',
+  mask: '+38 (000) 00-00-000',
   lazy: false,
 };
 let mask = IMask(element, maskOptions);
