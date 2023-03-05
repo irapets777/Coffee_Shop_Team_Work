@@ -74,16 +74,14 @@
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                     background-repeat: no-repeat;
+                     background-position: 3%;
                      @media screen and (max-width: 480px) {
                         font-size: 18px;
                      }
                   }
                   input[type="date"]::-webkit-calendar-picker-indicator {
-                     background-color: #fff;
-                     background: white;
-                     background-image: url("../img/reserve-img/form-image/date-form.svg");
-                     background-repeat: no-repeat;
-                     background-position: 55%;
+                     opacity: 0;
                      padding: 14px 12px;
                      cursor: pointer;
                   }
@@ -105,17 +103,15 @@
                      font-size: 21px;
                      line-height: 27px;
                      color: #9d8781;
+                     background-repeat: no-repeat;
+                     background-position: 7%;
                      @media screen and (max-width: 480px) {
                         font-size: 18px;
                         margin-right: 22px;
                      }
                   }
                   input[type="time"]::-webkit-calendar-picker-indicator {
-                     background-color: #fff;
-                     background: white;
-                     background-image: url("../img/reserve-img/form-image/time-form.svg");
-                     background-repeat: no-repeat;
-                     background-position: 5%;
+                     opacity: 0;
                      padding: 14px 12px;
                      cursor: pointer;
                   }
@@ -125,8 +121,6 @@
                      border: 1px solid #d6d6d6;
                      border-radius: 12px;
                      padding-left: 32px;
-                     background-image: url("../img/reserve-img/form-image/persone-form.svg"),
-                        url("../img/reserve-img/form-image/arrow-guest.svg");
                      background-position: left;
                      background-repeat: no-repeat;
                      background-position: 3%, 95%;
@@ -153,7 +147,6 @@
                      border: 1px solid #d6d6d6;
                      border-radius: 12px;
                      padding-left: 50px;
-                     background-image: url("../img/reserve-img/form-image/persone-form.svg");
                      background-repeat: no-repeat;
                      background-position: 3%;
                      font-family: $var6;
@@ -182,9 +175,8 @@
                      border: 1px solid #d6d6d6;
                      border-radius: 12px;
                      padding-left: 50px;
-                     background-image: url("../img/reserve-img/form-image/mobile-form.svg");
                      background-repeat: no-repeat;
-                     background-position: 3%;
+                     background-position: 2%;
                      font-family: $var6;
                      font-size: 21px;
                      line-height: 27px;
@@ -228,9 +220,8 @@
                      border: 1px solid #d6d6d6;
                      border-radius: 12px;
                      padding-left: 50px;
-                     background-image: url("../img/reserve-img/form-image/mail-form.svg");
                      background-repeat: no-repeat;
-                     background-position: 3%;
+                     background-position: 5%;
                      font-family: $var6;
                      font-size: 21px;
                      line-height: 27px;

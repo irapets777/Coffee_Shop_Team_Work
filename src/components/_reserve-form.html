@@ -1,4 +1,4 @@
-<section class="reserve-form" style="background-image: url(../img/reserve-img/reserve-bean-bg.svg);">
+<section class="reserve-form" style="background-image: url(./img/reserve-img/form-beanRight.png);">
    <div class="reserve-form__container">
       <h2>Reserve a Table </h2>
       <div class="reserve__item-container"
@@ -10,11 +10,15 @@
             <div class="reserve__form">
                <form>
                   <div class="form__date">
-                     <input title="Click on calendar image" type="date" placeholder="Date" value="2023-02-17" required>
+                     <input title="Click on calendar image" type="date" placeholder="Date" value="2023-02-17" required
+                     style="background-image: url(./img/reserve-img/form/fotm-calendar.png);">
                   </div>
                   <div class="form__time-guest">
-                     <input title="Click on time image" type=time id="appt" name="appt" required>
-                     <select name="form-guests" id="guests" required>
+                     <input title="Click on time image" type=time id="appt" name="appt" required
+                     style="background-image: url(./img/reserve-img/form/form-time.png);">
+                     <select name="form-guests" id="guests" required
+                     style="background-image: url(./img/reserve-img/form/form-guest.png),
+                     url(./img/reserve-img/form/form-arrow.png);">
                         <option value="1">A table for 1</option>
                         <option value="2">A table for 2</option>
                         <option value="3">A table for 3</option>
@@ -22,14 +26,17 @@
                      </select>
                   </div>
                   <div class="form__name">
-                     <input type="text" id="fname" name="fname" autocomplete="off" placeholder="your name" required>
+                     <input type="text" id="fname" name="fname" autocomplete="off" placeholder="your name" required
+                     style="background-image: url(./img/reserve-img/form/form-persone.png);">
                   </div>
                   <div class="form__phone">
                      <input type="tel" id="phone" name="phone" autocomplete="off" placeholder="your phone"
-                        pattern="[0-9+]{3} [0-9()]{5} [0-9]{2}-[0-9]{2}-[0-9]{3}" required> <br>
+                        pattern="[0-9+]{3} [0-9()]{5} [0-9]{2}-[0-9]{2}-[0-9]{3}" required
+                        style="background-image: url(./img/reserve-img/form/form-phone.png);"> <br>
                   </div>
                   <div class="form__mail-submit">
-                     <input type="email" id="email" name="email" autocomplete="off" placeholder="your email" required>
+                     <input type="email" id="email" name="email" autocomplete="off" placeholder="your email" required
+                     style="background-image: url(./img/reserve-img/form/form-mail.png);">
                      <button type="submit" class="reserve__btn">Reserve</button>
                   </div>
                </form>
