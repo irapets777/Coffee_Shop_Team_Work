@@ -96,12 +96,6 @@ var swiper = new Swiper(".recommended__slider", {
   spaceBetween: 40,
   centeredSlides: true,
   loop: true,
-  speed: 1000,
-  autoplay: {
-    delay: 1500,
-    stopOnLastSlide: false,
-    disableOnInteraction: false,
-  },
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -245,6 +239,12 @@ var swiper = new Swiper(".review__slider-container", {
   effect: "coverflow",
   centeredSlides: true,
   loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 2500,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+  },
   coverflowEffect: {
     rotate: 0,
     stretch: 25,
