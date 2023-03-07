@@ -255,26 +255,26 @@ var swiper = new Swiper(".review__slider-container", {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 50,
+      spaceBetween: 30,
       coverflowEffect: {
         rotate: 0,
-        stretch: 80,
-        depth: 300,
+        stretch: 180,
+        depth: 100,
         modifier: 5,
-        slideShadows: true,
+        slideShadows: false,
       },
     },
-    500: {
-      slidesPerView: 2,
-      spaceBetween: 50,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 80,
-        depth: 200,
-        modifier: 2,
-        slideShadows: true,
-      },
-    },
+    // 500: {
+    //   slidesPerView: 2,
+    //   spaceBetween: 50,
+    //   coverflowEffect: {
+    //     rotate: 0,
+    //     stretch: 80,
+    //     depth: 200,
+    //     modifier: 1,
+    //     slideShadows: true,
+    //   },
+    // },
     600: {
       slidesPerView: 2,
       spaceBetween: 30,

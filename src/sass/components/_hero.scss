@@ -2,8 +2,11 @@
    width: 100%;
    margin: 0 auto;
    background-repeat: no-repeat;
-   background-position: bottom right;
-   background-size: 1440px 1050px;
+   background-position: 100% 100%;
+   background-size: 1420px 1080px;
+   @media screen and (max-width: 1300px) {
+      background-position: 50% 100%;
+   }
    @media screen and (max-width: 1100px) {
       background-position: right 100%;
       background-size: contain;
@@ -68,7 +71,7 @@
             align-items: center;
          }
          h1 {
-            font-family: "Dancing script";
+            font-family: $var7;
             font-weight: 700;
             font-size: 112px;
             line-height: 100%;
@@ -92,7 +95,7 @@
             max-width: 472px;
             margin-bottom: 86px;
             p {
-               font-family: "Leiko";
+               font-family: $var6;
                font-style: normal;
                font-weight: 400;
                font-size: 24px;
@@ -219,8 +222,41 @@
                }
                &:hover {
                   background: rgba(247, 225, 188, 0.3);
+                  img {
+                     animation: bike 2.5s;
+                     animation-iteration-count: 1;
+                  }
+                  @keyframes bike {
+                     0% {
+                        transform: translate(-100px, -10px) rotate(0deg);
+                     }
+
+                     25% {
+                        transform: rotate(-15deg);
+                     }
+
+                     40% {
+                        transform: rotate(0deg);
+                     }
+
+                     50% {
+                        transform: rotate(-45deg);
+                     }
+
+                     75% {
+                        transform: translate(100px, 0px) rotate(-45deg);
+                     }
+                     90% {
+                        opacity: 0;
+                        transform: translate(100px, 0px) rotate(-45deg);
+                     }
+                     100% {
+                        opacity: 1;
+                     }
+                  }
                }
                img {
+                  transition: 0.3s;
                   margin-left: 8px;
                }
             }
