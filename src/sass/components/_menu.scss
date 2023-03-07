@@ -676,9 +676,9 @@
          }
 
          .our__menu_btn {
-            float: right;
+            display: flex;
+            margin: 0 auto;
             padding-bottom: 148px;
-            transform: translateX(-100px);
             background-color: transparent;
             border: none;
             font-family: $var6;
@@ -690,7 +690,6 @@
             cursor: pointer;
             @media screen and (max-width: 576px) {
                font-size: 32px;
-               transform: translateX(-15px);
             }
          }
       }
