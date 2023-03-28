@@ -2,7 +2,7 @@
 let humb = document.querySelector('#burger-icon');
 let humbBody = document.querySelector('#burger-menu');
 let humbLink = document.querySelector('#burger-menu');
-let closeW = document.querySelector('#burger-menu');
+
 
 humb.addEventListener('click', humbHandler);
 function humbHandler(e) {
