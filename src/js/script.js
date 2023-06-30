@@ -247,9 +247,9 @@ var swiper = new Swiper(".review__slider-container", {
   },
   coverflowEffect: {
     rotate: 0,
-    stretch: 25,
-    depth: 100,
-    modifier: 3,
+    stretch: 20,
+    depth: -300,
+    modifier: -3,
     slideShadows: true,
   },
   breakpoints: {
