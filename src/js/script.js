@@ -246,9 +246,9 @@ var swiper = new Swiper(".review__slider-container", {
     disableOnInteraction: false,
   },
   coverflowEffect: {
-    rotate: 0,
-    stretch: 25,
-    depth: 100,
+    rotate: 40,
+    stretch: 20,
+    depth: 300,
     modifier: 3,
     slideShadows: true,
   },
