@@ -317,3 +317,14 @@ var swiper = new Swiper(".review__slider-container", {
 
 });
 // ================================================================= //
+
+// fill line
+
+function line(fill) {
+
+  document.getElementById("green").style.display = 'none';
+  document.getElementById("yellow").style.display = 'none';
+  document.getElementById("red").style.display = 'none';
+
+  document.getElementById(fill).style.display = 'block';
+}

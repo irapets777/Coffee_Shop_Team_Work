@@ -1,0 +1,85 @@
+.roast {
+   margin: 0 auto;
+   padding: 40px 0;
+   max-width: 1200px;
+   background: rgba(173, 113, 74, 0.35);
+   border-radius: 35px;
+   margin-bottom: 90px;
+
+   h2 {
+      text-align: center;
+      margin: 0 0 30px 0;
+      font-family: "Dancing Script";
+      font-weight: 700;
+      font-size: 56px;
+      text-transform: capitalize;
+      color: #f8e4be;
+      text-shadow:
+         0 69px 19px rgba(32, 19, 22, 0.01),
+         0 44px 18px rgba(32, 19, 22, 0.09),
+         0 25px 15px rgba(32, 19, 22, 0.31),
+         0 11px 11px rgba(32, 19, 22, 0.52),
+         0 3px 6px rgba(32, 19, 22, 0.6),
+         0 0 0 rgba(32, 19, 22, 0.62);
+   }
+
+   &__fill {
+      width: 80%;
+      margin: 0 auto;
+      border: 1px solid #000;
+      border-radius: 35px;
+      text-align: center;
+      color: #fff;
+      height: 20px;
+      .low-roast {
+         background-color: #8fe01c;
+         width: 33%;
+         border-radius: 35px;
+         display: none;
+         height: 100%;
+      }
+      .medium-roast {
+         background-color: #e0b91c;
+         width: 66%;
+         border-radius: 35px;
+         display: none;
+         height: 100%;
+      }
+      .hard-roast {
+         background-color: #e04a1c;
+         width: 100%;
+         border-radius: 35px;
+         display: none;
+         height: 100%;
+      }
+   }
+
+   &__btns {
+      width: 80%;
+      margin: 0 auto;
+      padding: 40px 0 0 0;
+      display: flex;
+      justify-content: space-evenly;
+
+      .low-btn,
+      .medium-btn,
+      .high-btn {
+         font-family: leiko;
+         font-weight: 400;
+         font-size: 24px;
+         line-height: 100%;
+         color: #f8e4be;
+         padding: 12px 36px;
+         border-radius: 49px;
+         background: rgba(247, 225, 188, 0.1);
+         border-right: 2px solid #e0a872;
+         border-bottom: 2px solid #f8e4be;
+         border-left: 2px solid #fff3e0;
+         border-top: 2px solid #e0a872;
+         transition: 0.3s;
+         &:hover {
+            background: rgba(247, 225, 188, 0.3);
+         }
+      }
+   }
+}
