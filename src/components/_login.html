@@ -1,0 +1,41 @@
+<!-- FORM LOGIN -->
+<section id="popupRegistration" class="user">
+
+   <div class="user__content">
+
+      <div class="close-registration">
+         <span class="close-form-registration">&times;</span>
+      </div>
+
+      <div class="registration-content">
+         <div class="registration-title">
+            <h2 id="changeText" class="changetext">Hello please </h2>
+         </div>
+         <form class="user-form" method="post">
+            <div class="container">
+               <label for="uname"><b>Username</b></label>
+               <input class="input-group" type="text" placeholder="Enter Username" name="uname" required>
+
+               <label for="psw"><b>Password</b></label>
+               <div class="password-container">
+                  <input class="input-group" type="password" placeholder="Enter Password" name="psw" id="passwordInput"
+                     required>
+                  <input type="checkbox" id="showPasswordCheckbox"> Show Password
+               </div>
+
+               <button class="user-login" type="submit">Login</button>
+               <label class="label-check">
+                  <input class="check-style" type="checkbox" checked="checked" name="remember"> Remember me
+               </label>
+
+               <div class="bottom-container">
+                  <button class="cancel-form" type="button" id="btnCancel">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+               </div>
+            </div>
+         </form>
+      </div>
+
+   </div>
+
+</section>

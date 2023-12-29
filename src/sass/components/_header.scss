@@ -41,6 +41,12 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
+
+                .btnlogin {
+                    background: none;
+                    border: none;
+                }
+
                 .shop {
                     animation: wobble-hor-top 2.8s both;
                     animation-iteration-count: infinite;
