@@ -29,7 +29,7 @@
       border: 1px solid #000;
       border-radius: 35px;
       text-align: center;
-      color: #fff;
+      color: #d6d6d6;
       height: 20px;
       .low-roast {
          background-color: #8fe01c;
@@ -54,6 +54,7 @@
       }
    }
 
+   // we need to to these buttons animation
    &__btns {
       width: 80%;
       margin: 0 auto;
@@ -64,7 +65,7 @@
       .low-btn,
       .medium-btn,
       .high-btn {
-         font-family: leiko;
+         font-family: "leiko";
          font-weight: 400;
          font-size: 24px;
          line-height: 100%;
