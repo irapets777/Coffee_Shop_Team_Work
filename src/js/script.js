@@ -318,13 +318,30 @@ var swiper = new Swiper(".review__slider-container", {
 });
 // ================================================================= //
 
-// fill line
+// line percent //
 
-function line(fill) {
+function animLine(color) {
+  // get parent container width
+  var parentWidth = document.querySelector(".roast__fill").offsetWidth;
 
-  document.getElementById("green").style.display = 'none';
-  document.getElementById("yellow").style.display = 'none';
-  document.getElementById("red").style.display = 'none';
+  // set width for selected line
+  var selectedWidth;
+  if (color === "green") {
+    selectedWidth = parentWidth * 0.33;
+  } else if (color === "yellow") {
+    selectedWidth = parentWidth * 0.66;
+  } else if (color === "red") {
+    selectedWidth = parentWidth;
+  }
 
-  document.getElementById(fill).style.display = 'block';
+  // hide all lines
+  document.querySelectorAll(".line").forEach(function (line) {
+    line.style.width = "0";
+    line.style.visibility = "hidden"; // Hide all lines
+  });
+
+  // show selected line with animation
+  var selectedLine = document.getElementById(color);
+  selectedLine.style.width = selectedWidth + "px";
+  selectedLine.style.visibility = "visible"; // Show choose line
 }

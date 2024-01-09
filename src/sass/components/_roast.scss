@@ -33,30 +33,33 @@
       text-align: center;
       color: #d6d6d6;
       height: 20px;
+      overflow: hidden;
+      position: relative;
+      .line {
+         display: block;
+         visibility: hidden;
+         height: 100%;
+         width: 0;
+         transition: width 0.5s ease;
+         position: absolute;
+      }
       .low-roast {
-         background-color: #291ce0;
-         width: 33%;
+         background-color: green;
          border-radius: 35px;
-         display: none;
          height: 100%;
       }
       .medium-roast {
-         background-color: #ee33d5;
-         width: 66%;
+         background-color: yellow;
          border-radius: 35px;
-         display: none;
          height: 100%;
       }
       .hard-roast {
-         background-color: #08aa94;
-         width: 100%;
+         background-color: red;
          border-radius: 35px;
-         display: none;
          height: 100%;
       }
    }
 
-   // we need to to these buttons animation
    &__btns {
       width: 80%;
       margin: 0 auto;
