@@ -1,6 +1,6 @@
 // Change text
 
-var i = 0;
+var defaultText = 0;
 var texts = [
    'make registration.',
    'login to your account.',
@@ -13,13 +13,13 @@ function typeWriter() {
    var existingTextElement = document.getElementById("changeText");
    var existingText = existingTextElement.innerHTML;
 
-   if (i < texts[currentTextIndex].length) {
-      if (existingText.endsWith(texts[currentTextIndex].charAt(i))) {
+   if (defaultText < texts[currentTextIndex].length) {
+      if (existingText.endsWith(texts[currentTextIndex].charAt(defaultText))) {
          // Delete repetable words
-         i++;
+         defaultText++;
       } else {
-         existingTextElement.innerHTML = existingText + texts[currentTextIndex].charAt(i);
-         i++;
+         existingTextElement.innerHTML = existingText + texts[currentTextIndex].charAt(defaultText);
+         defaultText++;
       }
       setTimeout(typeWriter, speed);
    } else {
@@ -28,9 +28,9 @@ function typeWriter() {
          // Increment index to show nexr text
          currentTextIndex = (currentTextIndex + 1) % texts.length;
          // 
-         i = 0;
+         defaultText = 0;
          // Keep "Hello"
-         existingTextElement.innerHTML = 'Hello ' + texts[currentTextIndex].charAt(i);
+         existingTextElement.innerHTML = 'Hello ' + texts[currentTextIndex].charAt(defaultText);
          // Call typeWriter() again
          setTimeout(typeWriter, speed);
       }, 2000);
@@ -42,7 +42,7 @@ typeWriter();
 
 // =========================================================================================== //
 
-// Get elements
+// Get elements to show password
 let passwordInput = document.getElementById("passwordInput");
 let showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
 
