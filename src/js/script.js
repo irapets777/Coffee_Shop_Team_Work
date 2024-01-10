@@ -328,7 +328,7 @@ function animLine(color) {
   var selectedWidth;
   if (color === "green") {
     selectedWidth = parentWidth * 0.33;
-  } else if (color === "yellow") {
+  } else if (color === "orange") {
     selectedWidth = parentWidth * 0.66;
   } else if (color === "red") {
     selectedWidth = parentWidth;
